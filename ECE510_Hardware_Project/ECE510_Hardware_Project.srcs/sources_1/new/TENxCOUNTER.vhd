@@ -18,20 +18,25 @@ signal count : std_logic_vector(8 downto 0):=(others =>'0');
 begin
 	process(CLK,RST,PRE,CNTDIR,CNT,PREVAL)
 	begin
-		if(rising_edge(CLK) AND RST = '0') then
+	   if(RST='1') then
+	       count<= "000000000";
+	   end if;
+	   
+		if(rising_edge(CLK) AND RST /= '1') then
 			if(PRE='1') then
 				count <= PREVAL;
 			else
-				if(CNTDIR = '0') then
-					count <= count +1;
-				else
+				if(CNTDIR = '1') then
 					count <= count -1;
+				else
+					count <= count +1;
 				end if;
 			end if;
 		end if;	
 	end process;
 	
-	COUNT_OUT <= "00000000" WHEN RST = '1'
-	       else count when RST = '0';
+	
+	COUNT_OUT <= "000000000" WHEN RST = '1'
+	       else count;
 
 end Behavioral;

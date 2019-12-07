@@ -1,0 +1,7 @@
+Running: xsim.dir/TENxCOUNTER_behav/xsimk.exe -simmode gui -wdb TENxCOUNTER_behav.wdb -simrunnum 0 -socket 63830
+Design successfully loaded
+Design Loading Memory Usage: 5252 KB (Peak: 5252 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 5904 KB (Peak: 5904 KB)
+Simulation CPU Usage: 0 ms

@@ -16,10 +16,10 @@ begin
     begin
         if (SEL = '1') then
             OUT1 <= PRE;
-            OUT2 <= "00000000";
+            OUT2 <= "000000000";
          else
             OUT2 <= PRE;
-            OUT1 <= "00000000";
+            OUT1 <= "000000000";
          end if;
     end process;
 end dmux;
