@@ -64,17 +64,17 @@ begin
         if rising_edge(Refresh_Rate(10)) then
             seg_sel <= "1111";
             if choice = "00" then
-                selector <= "1110";
-                BHC <= "0000";
+                selector <= "1110";-- Far right
+                BHC <= SSDI(3 downto 0);
             elsif choice = "01" then
                 selector <= "1101";
-                BHC <= "0001";
+                BHC <= SSDI(7 downto 4);
             elsif choice = "10" then
                 selector <= "1011";
-                BHC <= "0010";
+                BHC <= SSDI(11 downto 8);
             elsif choice = "11" then
-                selector <= "0111";
-                BHC <= "0011";
+                selector <= "0111";-- Far left
+                BHC <= SSDI(15 downto 12);
              end if;
              case BHC is
                 when "0000" => seg_out <= "1000000"; --0

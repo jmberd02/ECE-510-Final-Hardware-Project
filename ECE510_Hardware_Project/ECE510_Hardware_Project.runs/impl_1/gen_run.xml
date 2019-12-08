@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1575775271">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1575776244">
   <File Type="BITSTR-BMM" Name="CNTxALU_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="CNTxALU_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="CNTxALU_timing_summary_init.rpt"/>
@@ -79,15 +79,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/CNTxALU.vhd">
+    <File Path="$PSRCDIR/sources_1/new/bin_to_bcd.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/bin_to_bcd.vhd">
+    <File Path="$PSRCDIR/sources_1/new/CNTxALU.vhd">
       <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Dec  7 22:21:15 2019
-# Process ID: 5712
+# Start of session at: Sat Dec  7 22:37:26 2019
+# Process ID: 16416
 # Current directory: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.runs/synth_1
 # Command line: vivado.exe -log CNTxALU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CNTxALU.tcl
 # Log file: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.runs/synth_1/CNTxALU.vds
