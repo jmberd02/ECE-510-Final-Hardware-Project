@@ -1,0 +1,23 @@
+14:47:45 INFO  : Registering command handlers for SDK TCF services
+14:47:46 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\natha\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.sdk\temp_xsdb_launch_script.tcl
+14:47:49 INFO  : XSCT server has started successfully.
+14:47:52 INFO  : Processing command line option -hwspec C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU.hdf.
+14:47:52 INFO  : Successfully done setting XSCT server connection channel  
+14:47:52 INFO  : Successfully done setting SDK workspace  
+15:47:24 INFO  : Registering command handlers for SDK TCF services
+15:47:24 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\natha\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.sdk\temp_xsdb_launch_script.tcl
+15:47:27 INFO  : XSCT server has started successfully.
+15:47:28 INFO  : Processing command line option -hwspec C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU.hdf.
+15:47:28 INFO  : Successfully done setting XSCT server connection channel  
+15:47:28 INFO  : Successfully done setting SDK workspace  
+15:47:28 INFO  : Checking for hwspec changes in the project CNTxALU_hw_platform_0.
+15:47:31 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1575837447141,  Project:1575834313729
+15:47:31 INFO  : The hardware specification for project 'CNTxALU_hw_platform_0' is different from C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU.hdf.
+15:47:31 INFO  : Copied contents of C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU.hdf into \CNTxALU_hw_platform_0\system.hdf.
+15:47:31 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:47:34 INFO  : 
+15:47:36 INFO  : 
+15:47:37 INFO  : Updating hardware inferred compiler options for ALU.
+15:47:37 INFO  : Clearing existing target manager status.
+15:47:37 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+15:47:39 WARN  : Linker script will not be updated automatically. Users need to update it manually.

@@ -18,24 +18,60 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 3
-set_param xicom.use_bs_reader 1
+set_param synth.incrementalSynthesisCache C:/Users/natha/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3428-DESKTOP-V61H4BB/incrSyn
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
+set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.cache/wt [current_project]
 set_property parent.project_path C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property ip_output_repo c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
+  C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/hdl/ALU_wrapper.vhd
+  C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/Demux.vhd
   C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd
   C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/TENxCOUNTER.vhd
   C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/bin_to_bcd.vhd
   C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd
 }
+add_files C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ALU.bd
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_microblaze_0_0_1/ALU_microblaze_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_microblaze_0_0_1/ALU_microblaze_0_0_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_microblaze_0_0_1/ALU_microblaze_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_dlmb_v10_0_1/ALU_dlmb_v10_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_dlmb_v10_0_1/ALU_dlmb_v10_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_ilmb_v10_0_1/ALU_ilmb_v10_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_ilmb_v10_0_1/ALU_ilmb_v10_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_dlmb_bram_if_cntlr_0_1/ALU_dlmb_bram_if_cntlr_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_ilmb_bram_if_cntlr_0_1/ALU_ilmb_bram_if_cntlr_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_lmb_bram_0_1/ALU_lmb_bram_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_xbar_0_1/ALU_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_mdm_1_0_1/ALU_mdm_1_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_mdm_1_0_1/ALU_mdm_1_0_ooc_trace.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_mdm_1_0_1/ALU_mdm_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_clk_wiz_1_0_1/ALU_clk_wiz_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_clk_wiz_1_0_1/ALU_clk_wiz_1_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_clk_wiz_1_0_1/ALU_clk_wiz_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_rst_clk_wiz_1_100M_0_1/ALU_rst_clk_wiz_1_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_rst_clk_wiz_1_100M_0_1/ALU_rst_clk_wiz_1_100M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_rst_clk_wiz_1_100M_0_1/ALU_rst_clk_wiz_1_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_axi_gpio_0_0_1/ALU_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_axi_gpio_0_0_1/ALU_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_axi_gpio_0_0_1/ALU_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_axi_uartlite_0_0_1/ALU_axi_uartlite_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_axi_uartlite_0_0_1/ALU_axi_uartlite_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_axi_uartlite_0_0_1/ALU_axi_uartlite_0_0.xdc]
+set_property used_in_implementation false [get_files -all C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ALU_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/bd/ALU/ip/ALU_microblaze_0_0_1/data/mb_bootloop_le.elf]
+
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -47,6 +83,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/constrs_1/imports/SSD_Test.xdc
 set_property used_in_implementation false [get_files C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/constrs_1/imports/SSD_Test.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
