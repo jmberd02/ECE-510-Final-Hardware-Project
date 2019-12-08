@@ -21,7 +21,7 @@ begin
 	counter : process(CLK,RST,PRE,CNTDIR,CNT,PREVAL)
 	begin
 	   if(RST='1') then
-	       count<= "000000000";
+	       count<= "0000000000";
 	   end if;
 		if(rising_edge(CLK) AND RST /= '1') then
 			if(PRE='1') then
@@ -37,7 +37,7 @@ begin
 	end process;
 	
 	
-	COUNT_OUT <= "000000000" WHEN RST = '1'
+	COUNT_OUT <= "0000000000" WHEN RST = '1'
 	       else count;
 
 end Behavioral;
