@@ -2,184 +2,77 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Dec  6 22:02:17 2019
-# Process ID: 2000
+# Start of session at: Sat Dec  7 18:00:53 2019
+# Process ID: 17352
 # Current directory: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21608 C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17228 C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.xpr
 # Log file: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/vivado.log
 # Journal file: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project\vivado.jou
 #-----------------------------------------------------------
-start_gui
-open_project C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.xpr
+start_guioopen_project C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.xpruupdate_compile_order -fileset sources_1launch_simulation
+launch_simulation
 launch_simulation
 update_compile_order -fileset sources_1
-close [ open C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd w ]
-add_files C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd
 update_compile_order -fileset sources_1
-set_property is_enabled false [get_files  {C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/TENxCOUNTER.vhd}]
 launch_simulation
 launch_simulation
-source Demux.tcl
-add_force {/Demux/SEL} -radix hex {0 100ns} {1 150000ps} -repeat_every 100000ps
-run 1000 ns
-run 10000 ns
-add_force {/Demux/SEL} -radix hex {0 10ns} {1 60000ps} -repeat_every 100000ps
-run 1000 ns
+source bin_to_bcd.tcl
 restart
-run 1000 ns
-run 1000 ms
-restart
-run 1000 ns
-add_force {/Demux/SEL} -radix hex {1 100ns}
-restart
-run 1000 ns
-add_force {/Demux/SEL} -radix bin {1 100ns}
-run 1000 ns
-add_force {/Demux/PRE} -radix unsigned {100 0ns}
-run 1000 ns
-run 1000 ns
-run 1000 ns
-restart
+add_force {/bin_to_bcd/binary_in} -radix unsigned {1234 0ns}
+add_force {/bin_to_bcd/binary_in} -radix unsigned {123 0ns}
+run 3750 ns
 close_sim
 launch_simulation
-source Demux.tcl
-add_force {/Demux/PRE} -radix hex {1000 0ns} -cancel_after 500ns
-add_force {/Demux/PRE} -radix unsigned {1000 0ns} -cancel_after 500ns
-add_force {/Demux/PRE} -radix unsigned {100 0ns} -cancel_after 500ns
-add_force {/Demux/SEL} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
-run 1000 ns
-set_property is_enabled false [get_files  C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/Demux.vhd]
-set_property is_enabled true [get_files  C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/TENxCOUNTER.vhd]
+source bin_to_bcd.tcl
+add_force {/bin_to_bcd/binary_in} -radix unsigned {123 0ns}
+run 3750 ns
 close_sim
 launch_simulation
-source Demux.tcl
-restart
+source bin_to_bcd.tcl
+add_force {/bin_to_bcd/binary_in} -radix unsigned {100 0ns}
+run 3750 ns
 close_sim
 launch_simulation
-launch_simulation
-source TENxCOUNTER.tcl
-restart
-add_force {/TENxCOUNTER/CLK} -radix unsigned {0 0ns} {1 5000ps} -repeat_every 10000ps
-add_force {/TENxCOUNTER/CNTDIR} -radix hex {0 0ns}
-run 1000 ns
-restart
-add_force {/TENxCOUNTER/CLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
-run 1000 ns
+source bin_to_bcd.tcl
+add_force {/bin_to_bcd/binary_in} -radix hex {100 0ns}
+run 3750 ns
 close_sim
 launch_simulation
-launch_simulation
-source TENxCOUNTER.tcl
-restart
-add_force {/TENxCOUNTER/CLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
-run 1000 ns
+source bin_to_bcd.tcl
+add_force {/bin_to_bcd/binary_in} -radix hex {100 0ns}
+run 3750 ns
 close_sim
 launch_simulation
-launch_simulation
-source TENxCOUNTER.tcl
-add_force {/TENxCOUNTER/CLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
-restart
-run 1000 ns
-restart
-add_force {/TENxCOUNTER/CLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
-run 1000 ns
-add_force {/TENxCOUNTER/CNTDIR} -radix hex {1 250ns}
-run 1000 ns
-add_force {/TENxCOUNTER/RST} -radix hex {1 0ns}
-run 1000 ns
-close_sim
-launch_simulation
-source TENxCOUNTER.tcl
-restart
-add_force {/TENxCOUNTER/CLK} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
-run 1000 ns
-run 1000 ns
-close_sim
-launch_simulation
-source TENxCOUNTER.tcl
-restart
-add_force {/TENxCOUNTER/CLK} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
-run 1000 ns
-close_sim
-launch_simulation
-source TENxCOUNTER.tcl
-restart
-add_force {/TENxCOUNTER/CLK} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
-run 1000 ns
-add_force {/TENxCOUNTER/CLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
-run 1000 ns
-add_bp {C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/TENxCOUNTER.vhd} 21
-run 1000 ns
-step
-step
-step
-close_sim
-launch_simulation
-source TENxCOUNTER.tcl
-step
-add_force {/TENxCOUNTER/CLK} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
-run 1000 ns
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-run 1000 ns
-remove_bps -file {C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/TENxCOUNTER.vhd} -line 21
-run 1000 ns
-add_bp {C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/TENxCOUNTER.vhd} 21
-restart
-add_force {/TENxCOUNTER/CLK} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
-run 1000 ns
-step
-step
-step
-step
-step
-step
-step
-count
-step
-run 1000 ns
-remove_bps -file {C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/TENxCOUNTER.vhd} -line 21
-run 1000 ns
-run 1000 ns
-close_sim
-launch_simulation
-source TENxCOUNTER.tcl
-restart
-add_force {/TENxCOUNTER/CLK} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
-run 1000 ns
-close_sim
-launch_simulation
-source TENxCOUNTER.tcl
-add_force {/TENxCOUNTER/CLK} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
-run 1000 ns
-close_sim
-launch_simulation
-launch_simulation
-source TENxCOUNTER.tcl
+source bin_to_bcd.tcl
+add_force {/bin_to_bcd/binary_in} -radix unsigned {256 0ns}
+run 3750 ns
+set_property is_enabled true [get_files  C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd]
+set_property is_enabled true [get_files  C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd]
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
-close_sim
-launch_simulation
-source TENxCOUNTER.tcl
-add_force {/TENxCOUNTER/CLK} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
-run 1000 ns
-add_force {/TENxCOUNTER/RST} -radix hex {1 0ns}
-run 1000 ns
-remove_forces { {/TENxCOUNTER/RST} }
-run 1000 ns
-add_force {/TENxCOUNTER/PRE} -radix hex {1 0ns}
-add_force {/TENxCOUNTER/PREVAL} -radix unsigned {1000 0ns}
-add_force {/TENxCOUNTER/PREVAL} -radix dec {1000 0ns}
-add_force {/TENxCOUNTER/PREVAL} -radix unsigned {999 0ns}
-add_force {/TENxCOUNTER/PREVAL} -radix unsigned {100 0ns}
-run 1000 ns
-add_force {/TENxCOUNTER/RST} -radix hex {1 500ns}
-run 1000 ns
-close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property is_enabled true [get_files  C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/constrs_1/imports/Lab8/SSG.xdc]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183AB4D5CA]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183AB4D5CA]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.runs/impl_1/CNTxALU.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.runs/impl_1/CNTxALU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
