@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'sev_seg'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'CNTxALU'
-=======
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/TENxCOUNTER.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TENxCOUNTER'
->>>>>>> 698cc0f6e46cca1b4aa8f65b93a45f1ff2ac4c51

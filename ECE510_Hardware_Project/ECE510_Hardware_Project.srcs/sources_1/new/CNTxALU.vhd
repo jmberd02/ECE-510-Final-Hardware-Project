@@ -37,21 +37,16 @@ signal s1: std_logic_vector(15 downto 0);
 begin
     
     
-    BCD: bin_to_bcd port map(
-        binary_in=>"0000000010",
-        bcd_out => s1
-    );
+--    BCD: bin_to_bcd port map(
+--        binary_in=>"0000000010",
+--        bcd_out => s1
+--    );
     
     SSEG: sev_seg port map(
-            SSDI=>s1,
+            SSDI=>"0000000000000110",
             clk=>clk_100MHz,
             seg_out=>seg,
             seg_sel=>an
         );
-        
-     
-        
-       
-
 
 end Behavioral;

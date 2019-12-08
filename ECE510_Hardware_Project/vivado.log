@@ -2,14 +2,15 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Dec  7 20:32:56 2019
-# Process ID: 15716
+# Start of session at: Sat Dec  7 20:57:39 2019
+# Process ID: 8828
 # Current directory: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19268 C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12052 C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.xpr
 # Log file: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/vivado.log
 # Journal file: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project\vivado.jou
 #-----------------------------------------------------------
-start_guopopen_project C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.xpr
+start_gui
+open_project C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.xpr
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
 Current project path is 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project'
 Scanning sources...
@@ -17,5 +18,307 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
-open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 696.676 ; gain = 87.801
-update_compile_order -fileset sources_
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:09 . Memory (MB): peak = 697.633 ; gain = 97.941
+update_compile_order -fileset sources_1
+exlauINFO: [Common 17-206] Exiting Vivado at Sat Dec  7 20:58:49 2019...
+n in 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sev_seg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sev_seg_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sim/sim_1/behav/xsim'
+"xelab -wto d0776011e66d49debcc2610dece5c32b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sev_seg_behav xil_defaultlib.sev_seg -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d0776011e66d49debcc2610dece5c32b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sev_seg_behav xil_defaultlib.sev_seg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.sev_seg
+Built simulation snapshot sev_seg_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sev_seg_behav -key {Behavioral:sim_1:Functional:sev_seg} -tclbatch {sev_seg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sev_seg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sev_seg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 753.766 ; gain = 13.391
+add_force {/sev_seg/SSDI} -radix bin {0000000000000010 0ns}
+run 3750 ns
+add_bp {C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd} 64
+run 3750 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/sev_seg/SSDI} -radix unsigned {2 0ns}
+run 3750 ns
+Stopped at time : 0 fs : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 64
+step
+Stopped at time : 0 fs : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 55
+step
+step
+add_bp {C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd} 65
+remove_bps -file {C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd} -line 64
+run 3750 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3750 ns
+add_force {/sev_seg/Refresh_Rate} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 3750 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/sev_seg/Refresh_Rate} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/sev_seg/Refresh_Rate} -radix bin {00000000000000000000 0ns} {11111111111111111111 50000ps} -repeat_every 100000ps
+run 3750 ns
+Stopped at time : 50 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 65
+step
+Stopped at time : 50 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 66
+step
+Stopped at time : 50 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 67
+step
+Stopped at time : 50 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 68
+step
+Stopped at time : 50 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 92
+step
+Stopped at time : 50 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 93
+step
+Stopped at time : 100 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 64
+step
+Stopped at time : 150 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 64
+step
+Stopped at time : 150 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 65
+step
+Stopped at time : 150 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 66
+step
+Stopped at time : 150 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 69
+step
+Stopped at time : 150 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 70
+step
+Stopped at time : 150 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 71
+step
+Stopped at time : 150 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 92
+step
+Stopped at time : 150 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 93
+step
+Stopped at time : 200 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 64
+step
+Stopped at time : 250 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 64
+step
+Stopped at time : 250 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 65
+step
+Stopped at time : 250 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 66
+step
+Stopped at time : 250 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 69
+step
+Stopped at time : 250 ns : File "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" Line 72
+remove_bps -file {C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd} -line 65
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sev_seg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sev_seg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sev_seg'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sim/sim_1/behav/xsim'
+"xelab -wto d0776011e66d49debcc2610dece5c32b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sev_seg_behav xil_defaultlib.sev_seg -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d0776011e66d49debcc2610dece5c32b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sev_seg_behav xil_defaultlib.sev_seg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1378] slice direction differs from its index type range [C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd:68]
+WARNING: [VRFC 10-1378] slice direction differs from its index type range [C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd:71]
+WARNING: [VRFC 10-1378] slice direction differs from its index type range [C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd:74]
+WARNING: [VRFC 10-1378] slice direction differs from its index type range [C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd:77]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.sev_seg
+Built simulation snapshot sev_seg_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sev_seg_behav -key {Behavioral:sim_1:Functional:sev_seg} -tclbatch {sev_seg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sev_seg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sev_seg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 806.828 ; gain = 0.000
+add_force {/sev_seg/Refresh_Rate} -radix hex {00000000000000000000 0ns} {11111111111111111111 50000ps} -repeat_every 100000ps
+ERROR: [Simtcl 6-179] Couldn't add force for the following reason: Illegal value '11111111111111111111': Object size 20 does not match size of given value 11111111111111111111.
+add_force {/sev_seg/Refresh_Rate} -radix hex {00000000000000000000 0ns} {11111111111111111111 50000ps} -repeat_every 100000ps
+ERROR: [Simtcl 6-179] Couldn't add force for the following reason: Illegal value '11111111111111111111': Object size 20 does not match size of given value 11111111111111111111.
+add_force {/sev_seg/Refresh_Rate} -radix bin {00000000000000000000 0ns} {11111111111111111111 50000ps} -repeat_every 100000ps
+add_force {/sev_seg/SSDI} -radix bin {000000000000010 0ns}
+run 3750 ns
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 1050 ns  Iteration: 0  Process: /sev_seg/line__62
+  File: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd
+
+HDL Line: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd:68
+step
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+step
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+step
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+step
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+step
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+add_bp {C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd} 68
+step
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+step
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+step
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+step
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+step
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+step
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+remove_bps -file {C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd} -line 68
+step
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+step
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+step
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 3750 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run all
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 3750 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 3750 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 3750 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sev_seg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sev_seg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sev_seg'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sim/sim_1/behav/xsim'
+"xelab -wto d0776011e66d49debcc2610dece5c32b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sev_seg_behav xil_defaultlib.sev_seg -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d0776011e66d49debcc2610dece5c32b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sev_seg_behav xil_defaultlib.sev_seg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.sev_seg
+Built simulation snapshot sev_seg_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sev_seg_behav -key {Behavioral:sim_1:Functional:sev_seg} -tclbatch {sev_seg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sev_seg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sev_seg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 806.828 ; gain = 0.000
+run 3750 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/sev_seg/Refresh_Rate} -radix bin {00000000000000000000 0ns} {11111111111111111111 50000ps} -repeat_every 100000ps
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec  7 21:20:50 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.runs/synth_1/runme.log
+[Sat Dec  7 21:20:50 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.runs/impl_1/runme.log
+open_hw

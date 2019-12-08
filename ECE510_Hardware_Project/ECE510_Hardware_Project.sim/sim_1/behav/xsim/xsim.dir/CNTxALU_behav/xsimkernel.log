@@ -1,7 +1,7 @@
-Running: xsim.dir/CNTxALU_behav/xsimk.exe -simmode gui -wdb CNTxALU_behav.wdb -simrunnum 0 -socket 54695
+Running: xsim.dir/CNTxALU_behav/xsimk.exe -simmode gui -wdb CNTxALU_behav.wdb -simrunnum 0 -socket 54955
 Design successfully loaded
-Design Loading Memory Usage: 4984 KB (Peak: 4984 KB)
-Design Loading CPU Usage: 0 ms
+Design Loading Memory Usage: 5024 KB (Peak: 5024 KB)
+Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 5660 KB (Peak: 5660 KB)
+Simulation Memory Usage: 5688 KB (Peak: 5688 KB)
 Simulation CPU Usage: 31 ms

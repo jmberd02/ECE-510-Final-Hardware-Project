@@ -1,10 +1,6 @@
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-<<<<<<< HEAD
 Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d0776011e66d49debcc2610dece5c32b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CNTxALU_behav xil_defaultlib.CNTxALU -log elaborate.log 
-=======
-Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d0776011e66d49debcc2610dece5c32b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TENxCOUNTER_behav xil_defaultlib.TENxCOUNTER -log elaborate.log 
->>>>>>> 698cc0f6e46cca1b4aa8f65b93a45f1ff2ac4c51
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -14,10 +10,9 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
-Compiling architecture bbcd of entity xil_defaultlib.bin_to_bcd [bin_to_bcd_default]
+Compiling package ieee.numeric_std
 Compiling architecture behavioral of entity xil_defaultlib.sev_seg [sev_seg_default]
 Compiling architecture behavioral of entity xil_defaultlib.cntxalu
 Built simulation snapshot CNTxALU_behav

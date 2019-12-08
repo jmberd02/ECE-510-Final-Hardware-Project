@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Dec  7 20:24:38 2019
-# Process ID: 14168
+# Start of session at: Sat Dec  7 21:41:53 2019
+# Process ID: 20448
 # Current directory: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.runs/synth_1
 # Command line: vivado.exe -log CNTxALU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CNTxALU.tcl
 # Log file: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.runs/synth_1/CNTxALU.vds
@@ -16,20 +16,25 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15668 
+INFO: Helper process launched with PID 14012 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 700.465 ; gain = 178.824
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 699.941 ; gain = 178.496
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'CNTxALU' [C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd:12]
-INFO: [Synth 8-3491] module 'bin_to_bcd' declared at 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/bin_to_bcd.vhd:7' bound to instance 'BCD' of component 'bin_to_bcd' [C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd:31]
-INFO: [Synth 8-638] synthesizing module 'bin_to_bcd' [C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/bin_to_bcd.vhd:15]
-INFO: [Synth 8-256] done synthesizing module 'bin_to_bcd' (1#1) [C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/bin_to_bcd.vhd:15]
-INFO: [Synth 8-3491] module 'sev_seg' declared at 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd:36' bound to instance 'SSEG' of component 'sev_seg' [C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd:36]
+INFO: [Synth 8-3491] module 'sev_seg' declared at 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd:36' bound to instance 'SSEG' of component 'sev_seg' [C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd:45]
 INFO: [Synth 8-638] synthesizing module 'sev_seg' [C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'sev_seg' (2#1) [C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'CNTxALU' (3#1) [C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'sev_seg' (1#1) [C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'CNTxALU' (2#1) [C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd:12]
+WARNING: [Synth 8-3331] design sev_seg has unconnected port SSDI[15]
+WARNING: [Synth 8-3331] design sev_seg has unconnected port SSDI[14]
+WARNING: [Synth 8-3331] design sev_seg has unconnected port SSDI[13]
+WARNING: [Synth 8-3331] design sev_seg has unconnected port SSDI[12]
+WARNING: [Synth 8-3331] design sev_seg has unconnected port SSDI[11]
+WARNING: [Synth 8-3331] design sev_seg has unconnected port SSDI[10]
+WARNING: [Synth 8-3331] design sev_seg has unconnected port SSDI[9]
+WARNING: [Synth 8-3331] design sev_seg has unconnected port SSDI[8]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 763.441 ; gain = 241.801
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 763.160 ; gain = 241.715
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -42,10 +47,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 763.441 ; gain = 241.801
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 763.160 ; gain = 241.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 763.441 ; gain = 241.801
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 763.160 ; gain = 241.715
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -111,30 +116,30 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/CNTxALU_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 877.613 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 872.000 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 877.613 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 872.000 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 877.613 ; gain = 355.973
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 872.000 ; gain = 350.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 877.613 ; gain = 355.973
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 872.000 ; gain = 350.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 877.613 ; gain = 355.973
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 872.000 ; gain = 350.555
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "seg_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 877.613 ; gain = 355.973
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 872.000 ; gain = 350.555
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -147,19 +152,14 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     31 Bit       Adders := 3     
-	   2 Input      5 Bit       Adders := 2     
-	   2 Input      4 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	                7 Bit    Registers := 1     
 	                4 Bit    Registers := 3     
 	                2 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     31 Bit        Muxes := 3     
-	   2 Input      5 Bit        Muxes := 4     
-	   2 Input      4 Bit        Muxes := 2     
-	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -168,16 +168,6 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module bin_to_bcd 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     31 Bit       Adders := 3     
-	   2 Input      5 Bit       Adders := 2     
-	   2 Input      4 Bit       Adders := 1     
-+---Muxes : 
-	   2 Input     31 Bit        Muxes := 3     
-	   2 Input      5 Bit        Muxes := 4     
-	   2 Input      4 Bit        Muxes := 2     
 Module sev_seg 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -187,7 +177,8 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 3     
 	                2 Bit    Registers := 1     
 +---Muxes : 
-	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -205,16 +196,16 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3886] merging instance 'SSEG/BHC_reg[0]' (FDE) to 'SSEG/BHC_reg[2]'
-INFO: [Synth 8-3886] merging instance 'SSEG/BHC_reg[2]' (FDE) to 'SSEG/BHC_reg[3]'
+INFO: [Synth 8-3886] merging instance 'SSEG/BHC_reg[0]' (FDE) to 'SSEG/BHC_reg[3]'
+INFO: [Synth 8-3886] merging instance 'SSEG/BHC_reg[1]' (FDE) to 'SSEG/BHC_reg[2]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SSEG/BHC_reg[3] )
-INFO: [Synth 8-3886] merging instance 'SSEG/seg_out_reg[0]' (FDE) to 'SSEG/seg_out_reg[4]'
-INFO: [Synth 8-3886] merging instance 'SSEG/seg_out_reg[1]' (FDE) to 'SSEG/seg_out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'SSEG/seg_out_reg[0]' (FDE) to 'SSEG/seg_out_reg[5]'
 INFO: [Synth 8-3886] merging instance 'SSEG/seg_out_reg[2]' (FDE) to 'SSEG/seg_out_reg[5]'
-INFO: [Synth 8-3886] merging instance 'SSEG/seg_out_reg[3]' (FDE) to 'SSEG/seg_out_reg[4]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SSEG/seg_out_reg[4] )
+INFO: [Synth 8-3886] merging instance 'SSEG/seg_out_reg[3]' (FDE) to 'SSEG/seg_out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'SSEG/seg_out_reg[4]' (FDE) to 'SSEG/seg_out_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SSEG/seg_out_reg[5] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 877.613 ; gain = 355.973
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 872.000 ; gain = 350.555
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -226,13 +217,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 877.613 ; gain = 355.973
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 872.000 ; gain = 350.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 877.613 ; gain = 355.973
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 872.000 ; gain = 350.555
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -244,7 +235,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 877.613 ; gain = 355.973
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 872.000 ; gain = 350.555
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -268,7 +259,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 883.977 ; gain = 362.336
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 879.656 ; gain = 358.211
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -281,7 +272,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 883.977 ; gain = 362.336
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 879.656 ; gain = 358.211
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -293,25 +284,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 883.977 ; gain = 362.336
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 879.656 ; gain = 358.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 883.977 ; gain = 362.336
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 879.656 ; gain = 358.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 883.977 ; gain = 362.336
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 879.656 ; gain = 358.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 883.977 ; gain = 362.336
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 879.656 ; gain = 358.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -328,10 +319,10 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |     3|
+|2     |CARRY4 |     5|
 |3     |LUT1   |     3|
 |4     |LUT2   |     7|
-|5     |FDRE   |    24|
+|5     |FDRE   |    33|
 |6     |IBUF   |     1|
 |7     |OBUF   |    11|
 +------+-------+------+
@@ -340,31 +331,31 @@ Report Instance Areas:
 +------+---------+--------+------+
 |      |Instance |Module  |Cells |
 +------+---------+--------+------+
-|1     |top      |        |    50|
-|2     |  SSEG   |sev_seg |    37|
+|1     |top      |        |    61|
+|2     |  SSEG   |sev_seg |    48|
 +------+---------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 883.977 ; gain = 362.336
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 879.656 ; gain = 358.211
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 883.977 ; gain = 248.164
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 883.977 ; gain = 362.336
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 879.656 ; gain = 249.371
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 879.656 ; gain = 358.211
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 901.512 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 899.305 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 18 Warnings, 18 Critical Warnings and 0 Errors encountered.
+26 Infos, 26 Warnings, 18 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 901.512 ; gain = 610.492
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 901.512 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 899.305 ; gain = 604.711
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 899.305 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.runs/synth_1/CNTxALU.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file CNTxALU_utilization_synth.rpt -pb CNTxALU_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Dec  7 20:25:20 2019...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  7 21:42:34 2019...

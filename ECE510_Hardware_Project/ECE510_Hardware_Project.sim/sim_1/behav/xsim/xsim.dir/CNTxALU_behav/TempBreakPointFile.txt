@@ -1,1 +1,2 @@
 Breakpoint File Version 1.0
+65 true C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd

@@ -1,17 +1,9 @@
-<<<<<<< HEAD
 0.6
 2019.1
 May 24 2019
 15:06:07
-C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd,1575759772,vhdl,,,,sev_seg,,,,,,,,
-C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd,1575768528,vhdl,,,,cntxalu,,,,,,,,
+C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd,1575772318,vhdl,,,,sev_seg,,,,,,,,
+C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd,1575772279,vhdl,,,,cntxalu,,,,,,,,
 C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/Demux.vhd,1575687847,vhdl,,,,demux,,,,,,,,
 C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/TENxCOUNTER.vhd,1575689547,vhdl,,,,tenxcounter,,,,,,,,
 C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/bin_to_bcd.vhd,1575767238,vhdl,,,,bin_to_bcd,,,,,,,,
-=======
-0.6
-2019.1
-May 24 2019
-15:06:07
-C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/TENxCOUNTER.vhd,1575730594,vhdl,,,,tenxcounter,,,,,,,,
->>>>>>> 698cc0f6e46cca1b4aa8f65b93a45f1ff2ac4c51

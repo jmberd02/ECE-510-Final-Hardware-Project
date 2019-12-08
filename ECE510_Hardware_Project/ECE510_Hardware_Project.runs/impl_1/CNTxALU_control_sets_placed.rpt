@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sat Dec  7 20:26:01 2019
+| Date         : Sat Dec  7 21:43:14 2019
 | Host         : JACOBYOGA-PC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file CNTxALU_control_sets_placed.rpt
 | Design       : CNTxALU
@@ -44,10 +44,10 @@ Table of Contents
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     0 |
-| >= 10 to < 12      |     2 |
+| >= 10 to < 12      |     1 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     0 |
+| >= 16              |     1 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,10 +58,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              22 |            6 |
+| No           | No                    | No                     |              31 |            7 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |               3 |            1 |
+| Yes          | No                    | No                     |               2 |            1 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -73,9 +73,9 @@ Table of Contents
 +-----------------------+---------------+------------------+------------------+----------------+
 |      Clock Signal     | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +-----------------------+---------------+------------------+------------------+----------------+
-|  SSEG/p_0_in          | SSEG//i__n_0  |                  |                1 |              3 |
-|  SSEG/p_0_in          |               |                  |                3 |             11 |
-|  clk_100MHz_IBUF_BUFG |               |                  |                3 |             11 |
+|  SSEG/p_0_in          | SSEG//i__n_0  |                  |                1 |              2 |
+|  SSEG/p_0_in          |               |                  |                2 |             11 |
+|  clk_100MHz_IBUF_BUFG |               |                  |                5 |             20 |
 +-----------------------+---------------+------------------+------------------+----------------+
 
 
