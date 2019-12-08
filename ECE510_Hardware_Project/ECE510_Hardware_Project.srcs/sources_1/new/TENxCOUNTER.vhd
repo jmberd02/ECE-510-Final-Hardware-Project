@@ -15,17 +15,47 @@ entity TENxCOUNTER is
 end TENxCOUNTER;
 
 architecture Behavioral of TENxCOUNTER is
-
+signal Q1, Q2, Q3,Q_OUT : std_logic;--from Coding Examples
 signal count : std_logic_vector(n downto 0):=(others =>'0');
 begin
+
+
+--  Provides a one-shot pulse from a non-clock input, with reset
+--**Insert the following between the 'architecture' and
+---'begin' keywords**
+
+
+--**Insert the following after the 'begin' keyword**
+    debounce:process(clk)
+    begin
+        if (clk'event and clk = '1') then
+          if (rst = '1') then
+             Q1 <= '0';
+             Q2 <= '0';
+             Q3 <= '0';
+          else
+             Q1 <= cnt;
+             Q2 <= Q1;
+             Q3 <= Q2;
+          end if;
+        end if;
+    end process;
+
+    Q_OUT <= Q1 and Q2 and (not Q3);
+
+
 	counter : process(CLK,RST,PRE,CNTDIR,CNT,PREVAL)
 	begin
 	   if(RST='1') then
 	       count<= "0000000000";
 	   end if;
-		if(rising_edge(CLK) AND RST /= '1') then
+		if(rising_edge(Q_OUT) AND RST /= '1') then
 			if(PRE='1') then
-				count <= PREVAL;
+			    if (count >= "1111101000") then
+                    count <= "1111101000";
+                else
+				    count <= PREVAL;
+                end if;
 			else
 				if(CNTDIR = '1') then
 					count <= count -1;

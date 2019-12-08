@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1575778824">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1575826102">
   <File Type="BITSTR-BMM" Name="CNTxALU_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="CNTxALU_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="CNTxALU_timing_summary_init.rpt"/>
@@ -99,7 +99,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/Demux.vhd">
       <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -114,8 +114,17 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/Lab8/SSG.xdc">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../ECE511_VHDLLabs/Lab8/SSG.xdc"/>
         <Attr Name="ImportTime" Val="1574792861"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/SSD_Test.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="I:/SSD_Test.xdc"/>
+        <Attr Name="ImportTime" Val="1575819614"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>

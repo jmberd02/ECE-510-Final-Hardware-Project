@@ -4,7 +4,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity CNTxALU is
   Port (
-    clk_100MHz,A: in STD_LOGIC;
+    clk_100MHz,btnC: in STD_LOGIC;
+    sw: in STD_LOGIC_VECTOR(15 downto 0);
     seg: out STD_LOGIC_VECTOR(6 downto 0);
     an: out STD_LOGIC_VECTOR(3 downto 0)
    );
@@ -38,12 +39,12 @@ signal cntrOut: std_logic_vector(9 downto 0);
 begin
     
     TxC: TENxCOUNTER port map(
-        clk=>A,
-        RST=>'0',
-        PRE=>'0',
-        CNTDIR=>'0',
-        CNT=>'0',
-        PREVAL=>"0000000000",
+        clk=>clk_100MHz,
+        RST=>sw(15),
+        PRE=>sw(14),
+        CNTDIR=>sw(13),
+        CNT=>btnC,
+        PREVAL=>sw(9 downto 0),
         COUNT_OUT=>cntrOut
     );
     

@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sat Dec  7 23:21:44 2019
-| Host         : JACOB-FRACTALPC running 64-bit major release  (build 9200)
+| Date         : Sun Dec  8 12:29:37 2019
+| Host         : DESKTOP-V61H4BB running 64-bit major release  (build 9200)
 | Command      : report_methodology -file CNTxALU_methodology_drc_routed.rpt -pb CNTxALU_methodology_drc_routed.pb -rpx CNTxALU_methodology_drc_routed.rpx
 | Design       : CNTxALU
 | Device       : xc7a35tcpg236-1
@@ -23,12 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 31
-+-----------+------------------+-----------------------------+------------+
-| Rule      | Severity         | Description                 | Violations |
-+-----------+------------------+-----------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell | 31         |
-+-----------+------------------+-----------------------------+------------+
+             Violations found: 48
++-----------+------------------+-------------------------------+------------+
+| Rule      | Severity         | Description                   | Violations |
++-----------+------------------+-------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 31         |
+| TIMING-18 | Warning          | Missing input or output delay | 17         |
++-----------+------------------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -185,6 +186,91 @@ Related violations: <none>
 TIMING-17#31 Critical Warning
 Non-clocked sequential cell  
 The clock pin TxC/count_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on btnC relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on sw[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on sw[10] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on sw[11] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on sw[12] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on sw[13] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on sw[14] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on sw[15] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on sw[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on sw[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on sw[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on sw[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on sw[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on sw[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An input delay is missing on sw[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An input delay is missing on sw[8] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An input delay is missing on sw[9] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 

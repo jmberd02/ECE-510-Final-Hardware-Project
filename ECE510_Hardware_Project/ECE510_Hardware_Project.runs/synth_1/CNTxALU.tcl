@@ -17,25 +17,24 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 1
+set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.cache/wt [current_project]
-set_property parent.project_path C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.cache/wt [current_project]
+set_property parent.project_path C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.cache/ip [current_project]
+set_property ip_output_repo c:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd
-  C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/TENxCOUNTER.vhd
-  C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/bin_to_bcd.vhd
-  C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd
+  C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/imports/Lab8/Sev_Seg.vhd
+  C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/TENxCOUNTER.vhd
+  C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/bin_to_bcd.vhd
+  C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/sources_1/new/CNTxALU.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -45,8 +44,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/constrs_1/imports/Lab8/SSG.xdc
-set_property used_in_implementation false [get_files C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/constrs_1/imports/Lab8/SSG.xdc]
+read_xdc C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/constrs_1/imports/SSD_Test.xdc
+set_property used_in_implementation false [get_files C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/constrs_1/imports/SSD_Test.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.xpr">
+<Project Version="7" Minor="40" Path="C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="d0776011e66d49debcc2610dece5c32b"/>
@@ -32,7 +32,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="52"/>
+    <Option Name="WTXSimLaunchSim" Val="53"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -88,7 +88,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/Demux.vhd">
         <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -103,8 +103,17 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/Lab8/SSG.xdc">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../ECE511_VHDLLabs/Lab8/SSG.xdc"/>
           <Attr Name="ImportTime" Val="1574792861"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/SSD_Test.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="I:/SSD_Test.xdc"/>
+          <Attr Name="ImportTime" Val="1575819614"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>

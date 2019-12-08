@@ -13,6 +13,8 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
 Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.TENxCOUNTER [tenxcounter_default]
+Compiling architecture bbcd of entity xil_defaultlib.bin_to_bcd [bin_to_bcd_default]
 Compiling architecture behavioral of entity xil_defaultlib.sev_seg [sev_seg_default]
 Compiling architecture behavioral of entity xil_defaultlib.cntxalu
 Built simulation snapshot CNTxALU_behav
