@@ -46,28 +46,35 @@ begin
 
 	counter : process(CLK,RST,PRE,CNTDIR,CNT,PREVAL)
 	begin
-	   if(RST='1') then
-	       count<= "0000000000";
-	   end if;
-		if(rising_edge(Q_OUT) AND RST /= '1') then
+	   if (RST='1') then
+	       count <= "0000000000";
+       elsif(rising_edge(Q_OUT) AND RST /= '1') then
 			if(PRE='1') then
-			    if (count >= "1111101000") then
+			    if (PREVAL >= "1111101000") then
                     count <= "1111101000";
                 else
 				    count <= PREVAL;
                 end if;
 			else
 				if(CNTDIR = '1') then
-					count <= count -1;
+					if (count <= 0) then
+					   count <= "1111101000";
+                    else
+                        count <= count -1;
+                   end if;
 				else
-					count <= count +1;
+					if (count >= "1111101000") then
+					   count <= (others => '0');
+                    else
+                        count <= count +1;
+                   end if;
 				end if;
 			end if;
 		end if;	
 	end process;
 	
 	
-	COUNT_OUT <= "0000000000" WHEN RST = '1'
-	       else count;
+	COUNT_OUT <= count;--"0000000000" WHEN RST = '1'
+	       --else count;
 
 end Behavioral;

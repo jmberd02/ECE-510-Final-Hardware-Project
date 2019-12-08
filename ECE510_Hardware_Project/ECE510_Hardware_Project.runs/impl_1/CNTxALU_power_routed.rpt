@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Sun Dec  8 12:29:38 2019
+| Date             : Sun Dec  8 13:33:16 2019
 | Host             : DESKTOP-V61H4BB running 64-bit major release  (build 9200)
 | Command          : report_power -file CNTxALU_power_routed.rpt -pb CNTxALU_power_summary_routed.pb -rpx CNTxALU_power_routed.rpx
 | Design           : CNTxALU
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.116        |
+| Total On-Chip Power (W)  | 0.115        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.045        |
+| Dynamic (W)              | 0.043        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.4         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.007 |      650 |       --- |             --- |
-|   LUT as Logic |     0.007 |      396 |     20800 |            1.90 |
-|   CARRY4       |    <0.001 |       82 |      8150 |            1.01 |
+| Slice Logic    |     0.007 |      629 |       --- |             --- |
+|   LUT as Logic |     0.006 |      393 |     20800 |            1.89 |
+|   CARRY4       |    <0.001 |       79 |      8150 |            0.97 |
 |   Register     |    <0.001 |       45 |     41600 |            0.11 |
 |   Others       |     0.000 |        5 |       --- |             --- |
-| Signals        |     0.006 |      434 |       --- |             --- |
+| Signals        |     0.005 |      431 |       --- |             --- |
 | I/O            |     0.031 |       26 |       106 |           24.53 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.116 |          |           |                 |
+| Total          |     0.115 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.023 |       0.014 |      0.010 |
+| Vccint    |       1.000 |     0.022 |       0.012 |      0.010 |
 | Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |
 | Vcco33    |       3.300 |     0.010 |       0.009 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -140,9 +140,9 @@ Table of Contents
 +---------+-----------+
 | Name    | Power (W) |
 +---------+-----------+
-| CNTxALU |     0.045 |
+| CNTxALU |     0.043 |
 |   SSEG  |     0.001 |
-|   TxC   |     0.011 |
+|   TxC   |     0.009 |
 +---------+-----------+
 
 

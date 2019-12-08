@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1575826050">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1575829861">
   <File Type="PA-TCL" Name="CNTxALU.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="CNTxALU_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="CNTxALU_reports.tcl"/>

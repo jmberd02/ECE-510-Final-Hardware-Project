@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Dec  8 12:29:09 2019
+| Date         : Sun Dec  8 13:32:48 2019
 | Host         : DESKTOP-V61H4BB running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file CNTxALU_control_sets_placed.rpt
 | Design       : CNTxALU
@@ -58,25 +58,25 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              34 |           13 |
-| No           | No                    | Yes                    |               0 |            0 |
+| No           | No                    | No                     |              34 |           12 |
+| No           | No                    | Yes                    |              10 |            4 |
 | No           | Yes                   | No                     |               1 |            1 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              10 |            2 |
+| Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+-----------------------+----------------------+----------------------+------------------+----------------+
-|      Clock Signal     |     Enable Signal    |   Set/Reset Signal   | Slice Load Count | Bel Load Count |
-+-----------------------+----------------------+----------------------+------------------+----------------+
-|  clk_100MHz_IBUF_BUFG |                      | sw_IBUF[15]          |                1 |              1 |
-|  TxC/Q_OUT            | TxC/count[9]_i_2_n_0 | TxC/count[9]_i_1_n_0 |                2 |             10 |
-|  clk_100MHz_IBUF_BUFG |                      |                      |                4 |             13 |
-|  SSEG/p_0_in          |                      |                      |                9 |             21 |
-+-----------------------+----------------------+----------------------+------------------+----------------+
++-----------------------+---------------+------------------+------------------+----------------+
+|      Clock Signal     | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-----------------------+---------------+------------------+------------------+----------------+
+|  clk_100MHz_IBUF_BUFG |               | sw_IBUF[15]      |                1 |              1 |
+|  TxC/Q_OUT__0         |               | sw_IBUF[15]      |                4 |             10 |
+|  clk_100MHz_IBUF_BUFG |               |                  |                4 |             13 |
+|  SSEG/p_0_in          |               |                  |                8 |             21 |
++-----------------------+---------------+------------------+------------------+----------------+
 
 
