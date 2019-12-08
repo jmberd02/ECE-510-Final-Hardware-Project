@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="CNTxALU.mmi" key="CNTxALU_hw_platform_0-bmmFile"/>
+	<item value="Auto Detect" key="CNTxALU_hw_platform_0-device"/>
+	<item value="bootloop" key="CNTxALU_hw_platform_0-microblaze_0-initElf"/>
+	<item value="CNTxALU_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="Local" key="CNTxALU_hw_platform_0-target"/>
+	<item value="CNTxALU.bit" key="CNTxALU_hw_platform_0-bitFile"/>
+	<item value="false" key="CNTxALU_hw_platform_0-partial_bit"/>
+</section>

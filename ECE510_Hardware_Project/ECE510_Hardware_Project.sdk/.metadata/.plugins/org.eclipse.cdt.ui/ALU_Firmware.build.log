@@ -1,17 +1,6 @@
-15:55:40 **** Auto Build of configuration Debug for project ALU_Firmware ****
+17:39:52 **** Incremental Build of configuration Debug for project ALU_Firmware ****
 make all 
-'Building file: ../src/Main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
-'Finished building: ../src/Main.c'
-' '
-'Building target: ALU_Firmware.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: in function `_crtinit':
-(.text+0x78): undefined reference to `main'
-collect2.exe: error: ld returned 1 exit status
-make: *** [makefile:38: ALU_Firmware.elf] Error 1
+make: Nothing to be done for 'all'.
 
-15:55:41 Build Finished (took 678ms)
+17:39:52 Build Finished (took 172ms)
 

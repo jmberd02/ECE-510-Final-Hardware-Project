@@ -382,3 +382,837 @@ c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.
 (.text+0x78): undefined reference to `main'
 collect2.exe: error: ld returned 1 exit status
 make: *** [makefile:38: ALU_Firmware.elf] Error 1
+16:34:57 **** Clean-only build of configuration Debug for project ALU_Firmware ****
+make clean 
+rm -rf  ./src/Main.o  ./src/Main.d  ALU_Firmware.elf.size  ALU_Firmware.elf
+' '
+16:34:58 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:22:2: error: 'status' undeclared (first use in this function); did you mean 'XStatus'?
+  status = XGpio_Initialize(&GpioDevice,XPAR_GPIO_DEVICE_ID);
+  ^~~~~~
+  XStatus
+../src/Main.c:22:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/Main.c:22:40: error: 'XPAR_GPIO_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_GPIO_0_DEVICE_ID'?
+  status = XGpio_Initialize(&GpioDevice,XPAR_GPIO_DEVICE_ID);
+                                        ^~~~~~~~~~~~~~~~~~~
+                                        XPAR_GPIO_0_DEVICE_ID
+../src/Main.c:27:39: warning: unsigned conversion from 'long long int' to 'u32' {aka 'long unsigned int'} changes value from '1099511627775' to '4294967295' [-Woverflow]
+  XGpio_SetDataDirection(&GpioDevice,2,0xFFFFFFFFFF);
+                                       ^~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+16:37:12 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:22:2: error: 'status' undeclared (first use in this function); did you mean 'XStatus'?
+  status = XGpio_Initialize(&GpioDevice,XPAR_GPIO_DEVICE_ID);
+  ^~~~~~
+  XStatus
+../src/Main.c:22:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/Main.c:22:40: error: 'XPAR_GPIO_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_GPIO_0_DEVICE_ID'?
+  status = XGpio_Initialize(&GpioDevice,XPAR_GPIO_DEVICE_ID);
+                                        ^~~~~~~~~~~~~~~~~~~
+                                        XPAR_GPIO_0_DEVICE_ID
+../src/Main.c:27:39: warning: unsigned conversion from 'long long int' to 'u32' {aka 'long unsigned int'} changes value from '1099511627775' to '4294967295' [-Woverflow]
+  XGpio_SetDataDirection(&GpioDevice,2,0xFFFFFFFFFF);
+                                       ^~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+16:37:41 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:22:2: error: 'status' undeclared (first use in this function); did you mean 'XStatus'?
+  status = XGpio_Initialize(&GpioDevice,XPAR_GPIO_DEVICE_ID);
+  ^~~~~~
+  XStatus
+../src/Main.c:22:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/Main.c:22:40: error: 'XPAR_GPIO_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_GPIO_0_DEVICE_ID'?
+  status = XGpio_Initialize(&GpioDevice,XPAR_GPIO_DEVICE_ID);
+                                        ^~~~~~~~~~~~~~~~~~~
+                                        XPAR_GPIO_0_DEVICE_ID
+../src/Main.c:27:39: warning: unsigned conversion from 'long long int' to 'u32' {aka 'long unsigned int'} changes value from '1099511627775' to '4294967295' [-Woverflow]
+  XGpio_SetDataDirection(&GpioDevice,2,0xFFFFFFFFFF);
+                                       ^~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+16:38:03 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:22:2: error: 'status' undeclared (first use in this function); did you mean 'XStatus'?
+  status = XGpio_Initialize(&GpioDevice,XPAR_GPIO_DEVICE_ID);
+  ^~~~~~
+  XStatus
+../src/Main.c:22:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/Main.c:22:40: error: 'XPAR_GPIO_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_GPIO_0_DEVICE_ID'?
+  status = XGpio_Initialize(&GpioDevice,XPAR_GPIO_DEVICE_ID);
+                                        ^~~~~~~~~~~~~~~~~~~
+                                        XPAR_GPIO_0_DEVICE_ID
+../src/Main.c:27:39: warning: unsigned conversion from 'long long int' to 'u32' {aka 'long unsigned int'} changes value from '1099511627775' to '4294967295' [-Woverflow]
+  XGpio_SetDataDirection(&GpioDevice,2,0xFFFFFFFFFF);
+                                       ^~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:12:38 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:35:10: warning: implicit declaration of function 'Parse'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+   numA = Parse(DataRead,0,9);
+          ^~~~~
+          strsep
+../src/Main.c:38:14: error: subscripted value is neither array nor pointer nor vector
+   if(DataRead[10] == 0)
+              ^
+../src/Main.c:40:15: error: subscripted value is neither array nor pointer nor vector
+    if(DataRead[11]==0)//A+B
+               ^
+../src/Main.c:44:20: error: subscripted value is neither array nor pointer nor vector
+    else if(DataRead[11]==1)//A-B
+                    ^
+../src/Main.c:49:19: error: subscripted value is neither array nor pointer nor vector
+   else if(DataRead[10]==1)
+                   ^
+../src/Main.c:51:15: error: subscripted value is neither array nor pointer nor vector
+    if(DataRead[11]==0)//A*B
+               ^
+../src/Main.c:55:20: error: subscripted value is neither array nor pointer nor vector
+    else if(DataRead[11]==1)//A/B
+                    ^
+../src/Main.c:23:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+../src/Main.c: At top level:
+../src/Main.c:65:9: error: conflicting types for 'Parse'
+ Xuint32 Parse(Xuint32 port, int iStart, int iEnd)
+         ^~~~~
+../src/Main.c:35:10: note: previous implicit declaration of 'Parse' was here
+   numA = Parse(DataRead,0,9);
+          ^~~~~
+../src/Main.c: In function 'Parse':
+../src/Main.c:68:7: error: 'i' undeclared (first use in this function)
+  for (i=iStart;i<=iEnd;i++)
+       ^
+../src/Main.c:68:7: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:14:02 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:35:10: warning: implicit declaration of function 'Parse'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+   numA = Parse(DataRead,0,9);
+          ^~~~~
+          strsep
+../src/Main.c:38:14: error: subscripted value is neither array nor pointer nor vector
+   if(DataRead[10] == 0)
+              ^
+../src/Main.c:40:15: error: subscripted value is neither array nor pointer nor vector
+    if(DataRead[11]==0)//A+B
+               ^
+../src/Main.c:44:20: error: subscripted value is neither array nor pointer nor vector
+    else if(DataRead[11]==1)//A-B
+                    ^
+../src/Main.c:49:19: error: subscripted value is neither array nor pointer nor vector
+   else if(DataRead[10]==1)
+                   ^
+../src/Main.c:51:15: error: subscripted value is neither array nor pointer nor vector
+    if(DataRead[11]==0)//A*B
+               ^
+../src/Main.c:55:20: error: subscripted value is neither array nor pointer nor vector
+    else if(DataRead[11]==1)//A/B
+                    ^
+../src/Main.c:23:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+../src/Main.c: At top level:
+../src/Main.c:65:9: error: conflicting types for 'Parse'
+ Xuint32 Parse(Xuint32 port, int iStart, int iEnd)
+         ^~~~~
+../src/Main.c:35:10: note: previous implicit declaration of 'Parse' was here
+   numA = Parse(DataRead,0,9);
+          ^~~~~
+../src/Main.c: In function 'Parse':
+../src/Main.c:70:16: error: subscripted value is neither array nor pointer nor vector
+   total += port[i](i-iStart)*2;
+                ^
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:18:34 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:35:10: warning: implicit declaration of function 'Parse'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+   numA = Parse(DataRead,0,9);
+          ^~~~~
+          strsep
+../src/Main.c:38:14: error: subscripted value is neither array nor pointer nor vector
+   if(DataRead[10] == 0)
+              ^
+../src/Main.c:40:15: error: subscripted value is neither array nor pointer nor vector
+    if(DataRead[11]==0)//A+B
+               ^
+../src/Main.c:44:20: error: subscripted value is neither array nor pointer nor vector
+    else if(DataRead[11]==1)//A-B
+                    ^
+../src/Main.c:49:19: error: subscripted value is neither array nor pointer nor vector
+   else if(DataRead[10]==1)
+                   ^
+../src/Main.c:51:15: error: subscripted value is neither array nor pointer nor vector
+    if(DataRead[11]==0)//A*B
+               ^
+../src/Main.c:55:20: error: subscripted value is neither array nor pointer nor vector
+    else if(DataRead[11]==1)//A/B
+                    ^
+../src/Main.c:23:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+../src/Main.c: At top level:
+../src/Main.c:65:9: error: conflicting types for 'Parse'
+ Xuint32 Parse(Xuint32 port, int iStart, int iEnd)
+         ^~~~~
+../src/Main.c:35:10: note: previous implicit declaration of 'Parse' was here
+   numA = Parse(DataRead,0,9);
+          ^~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:21:02 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:35:10: warning: implicit declaration of function 'Parse'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+   numA = Parse(DataRead,0,9);
+          ^~~~~
+          strsep
+../src/Main.c:38:14: error: subscripted value is neither array nor pointer nor vector
+   if(DataRead[10] == 0)
+              ^
+../src/Main.c:40:15: error: subscripted value is neither array nor pointer nor vector
+    if(DataRead[11]==0)//A+B
+               ^
+../src/Main.c:44:20: error: subscripted value is neither array nor pointer nor vector
+    else if(DataRead[11]==1)//A-B
+                    ^
+../src/Main.c:49:19: error: subscripted value is neither array nor pointer nor vector
+   else if(DataRead[10]==1)
+                   ^
+../src/Main.c:51:15: error: subscripted value is neither array nor pointer nor vector
+    if(DataRead[11]==0)//A*B
+               ^
+../src/Main.c:55:20: error: subscripted value is neither array nor pointer nor vector
+    else if(DataRead[11]==1)//A/B
+                    ^
+../src/Main.c:23:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+../src/Main.c: At top level:
+../src/Main.c:65:9: error: conflicting types for 'Parse'
+ Xuint32 Parse(Xuint32 port, int iStart, int iEnd)
+         ^~~~~
+../src/Main.c:35:10: note: previous implicit declaration of 'Parse' was here
+   numA = Parse(DataRead,0,9);
+          ^~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:22:18 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:35:10: warning: implicit declaration of function 'Parse'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+   numA = Parse(DataRead,0,9);
+          ^~~~~
+          strsep
+../src/Main.c:38:14: error: subscripted value is neither array nor pointer nor vector
+   if(DataRead[10] == 0)
+              ^
+../src/Main.c:40:15: error: subscripted value is neither array nor pointer nor vector
+    if(DataRead[11]==0)//A+B
+               ^
+../src/Main.c:44:20: error: subscripted value is neither array nor pointer nor vector
+    else if(DataRead[11]==1)//A-B
+                    ^
+../src/Main.c:49:19: error: subscripted value is neither array nor pointer nor vector
+   else if(DataRead[10]==1)
+                   ^
+../src/Main.c:51:15: error: subscripted value is neither array nor pointer nor vector
+    if(DataRead[11]==0)//A*B
+               ^
+../src/Main.c:55:20: error: subscripted value is neither array nor pointer nor vector
+    else if(DataRead[11]==1)//A/B
+                    ^
+../src/Main.c:23:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+../src/Main.c: At top level:
+../src/Main.c:65:9: error: conflicting types for 'Parse'
+ Xuint32 Parse(Xuint32 port, int iStart, int iEnd)
+         ^~~~~
+../src/Main.c:35:10: note: previous implicit declaration of 'Parse' was here
+   numA = Parse(DataRead,0,9);
+          ^~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:23:14 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c:16:1: error: unknown type name 'Xunit32'; did you mean 'Xint32'?
+ Xunit32 Parse(Xuint32 port, int iStart, int iEnd);
+ ^~~~~~~
+ Xint32
+../src/Main.c: In function 'main':
+../src/Main.c:40:14: error: subscripted value is neither array nor pointer nor vector
+   if(DataRead[10] == 0)
+              ^
+../src/Main.c:42:15: error: subscripted value is neither array nor pointer nor vector
+    if(DataRead[11]==0)//A+B
+               ^
+../src/Main.c:46:20: error: subscripted value is neither array nor pointer nor vector
+    else if(DataRead[11]==1)//A-B
+                    ^
+../src/Main.c:51:19: error: subscripted value is neither array nor pointer nor vector
+   else if(DataRead[10]==1)
+                   ^
+../src/Main.c:53:15: error: subscripted value is neither array nor pointer nor vector
+    if(DataRead[11]==0)//A*B
+               ^
+../src/Main.c:57:20: error: subscripted value is neither array nor pointer nor vector
+    else if(DataRead[11]==1)//A/B
+                    ^
+../src/Main.c:25:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+../src/Main.c: At top level:
+../src/Main.c:67:9: error: conflicting types for 'Parse'
+ Xuint32 Parse(Xuint32 port, int iStart, int iEnd)
+         ^~~~~
+../src/Main.c:16:9: note: previous declaration of 'Parse' was here
+ Xunit32 Parse(Xuint32 port, int iStart, int iEnd);
+         ^~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:23:23 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:40:14: error: subscripted value is neither array nor pointer nor vector
+   if(DataRead[10] == 0)
+              ^
+../src/Main.c:42:15: error: subscripted value is neither array nor pointer nor vector
+    if(DataRead[11]==0)//A+B
+               ^
+../src/Main.c:46:20: error: subscripted value is neither array nor pointer nor vector
+    else if(DataRead[11]==1)//A-B
+                    ^
+../src/Main.c:51:19: error: subscripted value is neither array nor pointer nor vector
+   else if(DataRead[10]==1)
+                   ^
+../src/Main.c:53:15: error: subscripted value is neither array nor pointer nor vector
+    if(DataRead[11]==0)//A*B
+               ^
+../src/Main.c:57:20: error: subscripted value is neither array nor pointer nor vector
+    else if(DataRead[11]==1)//A/B
+                    ^
+../src/Main.c:25:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:27:47 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:40:6: warning: implicit declaration of function 'bitAt' [-Wimplicit-function-declaration]
+   if(bitAt(DataRead,10) == 0)
+      ^~~~~
+../src/Main.c:25:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+../src/Main.c: At top level:
+../src/Main.c:76:15: error: unknown type name 'xuint32'; did you mean 'Xuint32'?
+ Xuint32 bitAt(xuint32 val, int pos)
+               ^~~~~~~
+               Xuint32
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:28:06 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c:17:15: error: unknown type name 'xuint32'; did you mean 'Xuint32'?
+ Xuint32 bitAt(xuint32 val, int pos);
+               ^~~~~~~
+               Xuint32
+../src/Main.c: In function 'main':
+../src/Main.c:41:6: warning: implicit declaration of function 'bitAt' [-Wimplicit-function-declaration]
+   if(bitAt(DataRead,10) == 0)
+      ^~~~~
+../src/Main.c:26:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+../src/Main.c: At top level:
+../src/Main.c:77:15: error: unknown type name 'xuint32'; did you mean 'Xuint32'?
+ Xuint32 bitAt(xuint32 val, int pos)
+               ^~~~~~~
+               Xuint32
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:28:27 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:26:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3716	    288	   3132	   7136	   1be0	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+17:31:14 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:34:2: error: 'oldData' undeclared (first use in this function)
+  oldData = 0xFFFFFFFF;
+  ^~~~~~~
+../src/Main.c:34:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/Main.c:82:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/Main.c:26:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+At top level:
+../src/Main.c:79:9: warning: 'bitAt' defined but not used [-Wunused-function]
+ Xuint32 bitAt(Xuint32 val, int pos)
+         ^~~~~
+../src/Main.c:70:9: warning: 'Parse' defined but not used [-Wunused-function]
+ Xuint32 Parse(Xuint32 port, int iStart, int iEnd)
+         ^~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:31:26 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:83:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/Main.c:26:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+At top level:
+../src/Main.c:80:9: warning: 'bitAt' defined but not used [-Wunused-function]
+ Xuint32 bitAt(Xuint32 val, int pos)
+         ^~~~~
+../src/Main.c:71:9: warning: 'Parse' defined but not used [-Wunused-function]
+ Xuint32 Parse(Xuint32 port, int iStart, int iEnd)
+         ^~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:31:53 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:26:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3740	    288	   3132	   7160	   1bf8	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+17:33:34 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:49:14: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+      operator="+";
+              ^
+../src/Main.c:54:6: error: 'oeprator' undeclared (first use in this function); did you mean 'operator'?
+      oeprator="-";
+      ^~~~~~~~
+      operator
+../src/Main.c:54:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/Main.c:62:14: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+      operator="*";
+              ^
+../src/Main.c:67:14: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+      operator="/";
+              ^
+../src/Main.c:71:3: error: too few arguments to function 'xil_printf'
+   xil_printf()
+   ^~~~~~~~~~
+In file included from ../../ALU_Firmware_bsp/microblaze_0/include/xil_io.h:61,
+                 from ../../ALU_Firmware_bsp/microblaze_0/include/xgpio_l.h:83,
+                 from ../../ALU_Firmware_bsp/microblaze_0/include/xgpio.h:133,
+                 from ../src/Main.c:9:
+../../ALU_Firmware_bsp/microblaze_0/include/xil_printf.h:39:6: note: declared here
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+../src/Main.c:71:15: error: expected ';' before '}' token
+   xil_printf()
+               ^
+               ;
+../src/Main.c:73:3:
+   }
+   ~            
+../src/Main.c:28:7: warning: variable 'operator' set but not used [-Wunused-but-set-variable]
+  char operator;
+       ^~~~~~~~
+../src/Main.c:26:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:34:04 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:54:6: error: 'oeprator' undeclared (first use in this function); did you mean 'operator'?
+      oeprator='-';
+      ^~~~~~~~
+      operator
+../src/Main.c:54:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/Main.c:71:3: error: too few arguments to function 'xil_printf'
+   xil_printf()
+   ^~~~~~~~~~
+In file included from ../../ALU_Firmware_bsp/microblaze_0/include/xil_io.h:61,
+                 from ../../ALU_Firmware_bsp/microblaze_0/include/xgpio_l.h:83,
+                 from ../../ALU_Firmware_bsp/microblaze_0/include/xgpio.h:133,
+                 from ../src/Main.c:9:
+../../ALU_Firmware_bsp/microblaze_0/include/xil_printf.h:39:6: note: declared here
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+../src/Main.c:71:15: error: expected ';' before '}' token
+   xil_printf()
+               ^
+               ;
+../src/Main.c:73:3:
+   }
+   ~            
+../src/Main.c:28:7: warning: variable 'operator' set but not used [-Wunused-but-set-variable]
+  char operator;
+       ^~~~~~~~
+../src/Main.c:26:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:34:09 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:71:3: error: too few arguments to function 'xil_printf'
+   xil_printf()
+   ^~~~~~~~~~
+In file included from ../../ALU_Firmware_bsp/microblaze_0/include/xil_io.h:61,
+                 from ../../ALU_Firmware_bsp/microblaze_0/include/xgpio_l.h:83,
+                 from ../../ALU_Firmware_bsp/microblaze_0/include/xgpio.h:133,
+                 from ../src/Main.c:9:
+../../ALU_Firmware_bsp/microblaze_0/include/xil_printf.h:39:6: note: declared here
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+../src/Main.c:71:15: error: expected ';' before '}' token
+   xil_printf()
+               ^
+               ;
+../src/Main.c:73:3:
+   }
+   ~            
+../src/Main.c:28:7: warning: variable 'operator' set but not used [-Wunused-but-set-variable]
+  char operator;
+       ^~~~~~~~
+../src/Main.c:26:10: warning: variable 'numOut' set but not used [-Wunused-but-set-variable]
+  Xuint32 numOut;
+          ^~~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:35:38 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:71:66: error: 'oeprator' undeclared (first use in this function); did you mean 'operator'?
+   xil_printf("Num A %c Num B => %d %c %d = %d\r\n",operator,numA,oeprator,numB,numOut);
+                                                                  ^~~~~~~~
+                                                                  operator
+../src/Main.c:71:66: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+17:35:48 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8804	    652	   3136	  12592	   3130	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+17:36:11 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8812	    652	   3136	  12600	   3138	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+17:36:13 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+17:37:28 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8896	    652	   3132	  12680	   3188	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+17:38:24 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+17:39:38 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+17:39:52 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
