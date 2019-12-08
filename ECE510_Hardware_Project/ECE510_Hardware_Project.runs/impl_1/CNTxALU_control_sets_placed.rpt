@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sat Dec  7 21:43:14 2019
+| Date         : Sat Dec  7 22:22:53 2019
 | Host         : JACOBYOGA-PC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file CNTxALU_control_sets_placed.rpt
 | Design       : CNTxALU
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     3 |
-|    Minimum number of control sets                        |     3 |
+| Total control sets                                       |     2 |
+|    Minimum number of control sets                        |     2 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    15 |
+| Unused register locations in slices containing registers |    11 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,8 +39,8 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     3 |
-| >= 0 to < 4        |     1 |
+| Total control sets |     2 |
+| >= 0 to < 4        |     0 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     0 |
@@ -58,10 +58,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              31 |            7 |
+| No           | No                    | No                     |              29 |            7 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |               2 |            1 |
+| Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -73,9 +73,8 @@ Table of Contents
 +-----------------------+---------------+------------------+------------------+----------------+
 |      Clock Signal     | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +-----------------------+---------------+------------------+------------------+----------------+
-|  SSEG/p_0_in          | SSEG//i__n_0  |                  |                1 |              2 |
-|  SSEG/p_0_in          |               |                  |                2 |             11 |
-|  clk_100MHz_IBUF_BUFG |               |                  |                5 |             20 |
+|  clk_100MHz_IBUF_BUFG |               |                  |                3 |             11 |
+|  SSEG/p_0_in          |               |                  |                4 |             18 |
 +-----------------------+---------------+------------------+------------------+----------------+
 
 

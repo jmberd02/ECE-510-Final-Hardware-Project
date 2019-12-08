@@ -65,16 +65,17 @@ begin
             seg_sel <= "1111";
             if choice = "00" then
                 selector <= "1110";
-                BHC <= SSDI(3 downto 0); --This doesnt work for some reason....
+                BHC <= "0000";
             elsif choice = "01" then
                 selector <= "1101";
-                BHC <= SSDI(7 downto 4);
+                BHC <= "0001";
             elsif choice = "10" then
                 selector <= "1011";
-                BHC <= SSDI(7 downto 4);
+                BHC <= "0010";
             elsif choice = "11" then
                 selector <= "0111";
-                BHC <= SSDI(7 downto 4);
+                BHC <= "0011";
+             end if;
              case BHC is
                 when "0000" => seg_out <= "1000000"; --0
                 when "0001" => seg_out <= "1111001"; --1
@@ -88,7 +89,7 @@ begin
                 when "1001" => seg_out <= "0011000"; --9
                 when others => seg_out <= "1111111";          
              end case;
-            end if;
+            
             choice <= choice + 1;
             seg_sel <= selector;           
          end if;     
