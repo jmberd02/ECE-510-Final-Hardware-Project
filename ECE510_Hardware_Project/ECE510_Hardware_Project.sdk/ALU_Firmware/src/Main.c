@@ -15,14 +15,14 @@ XGpio GpioDevice;
 
 Xuint32 Parse(Xuint32 port, int iStart, int iEnd);
 Xuint32 bitAt(Xuint32 val, int pos);
+unsigned bitSpec(int start, int len);
 
 int main(void)
 {
 	//Variables
 	Xuint32 statusCode;
 	Xuint32 DataRead;
-	Xuint32 numA;
-	Xuint32 numB;
+	Xuint32 numA,numB,operation;
 	Xuint32 numOut;
 	Xuint32 oldData;
 	char operator;
@@ -39,38 +39,32 @@ int main(void)
 		DataRead = XGpio_DiscreteRead(&GpioDevice,2);
 		numA = Parse(DataRead,0,9);
 		numB = Parse(DataRead,12,21);
+		operation = Parse(DataRead,10,11);
+
 		if(DataRead != oldData)
 		{
-			if(bitAt(DataRead,10) == 0)
-
-			{
-				if(bitAt(DataRead,11)==0)//A+B
-				{
+			switch(operation){
+				case 0x00000000:
 					numOut = numA + numB;
 					operator='+';
-				}
-				else if(bitAt(DataRead,11)==1)//A-B
-				{
+					break;
+				case 0x00000001:
 					numOut = numA - numB;
 					operator='-';
-				}
-			}
-			else if(bitAt(DataRead,10)==1)
-			{
-				if(bitAt(DataRead,11)==0)//A*B
-				{
+					break;
+				case 0x00000002:
 					numOut = numA * numB;
 					operator='*';
-				}
-				else if(bitAt(DataRead,11)==1)//A/B
-				{
+					break;
+				case 0x00000003:
 					numOut = numA / numB;
 					operator='/';
-				}
+					break;
+
 			}
 
-		xil_printf("Num A %c Num B => %d %c %d = %d\r\n",operator,numA,operator,numB,numOut);
-		oldData = DataRead;
+			xil_printf("Num A %c Num B => %d %c %d = %d\r\n",operator,numA,operator,numB,numOut);
+			oldData = DataRead;
 		}
 	}
 }
@@ -78,10 +72,20 @@ int main(void)
 Xuint32 Parse(Xuint32 port, int iStart, int iEnd)
 {
 	Xuint32 total=0;
-	Xuint32 mask = (iStart-iEnd)<<iStart;
-	total = port & mask;
-	total = total>>iStart;
+	Xuint32 mask = bitSpec(iStart,iEnd-iStart+1);
+	total = (port & mask)>>iStart;
+
 	return total;
+}
+
+//Xuint32 getBitMask(int highbit, int lowbit) {
+//	//https://stackoverflow.com/a/35109809
+//	Xuint32 i = ~0U;
+//    return ~(i << highbit << 1) & (i << lowbit);
+//}
+
+unsigned bitSpec(int start, int len) {
+    return (~0U >> (32 - len)) << start;
 }
 
 Xuint32 bitAt(Xuint32 val, int pos)

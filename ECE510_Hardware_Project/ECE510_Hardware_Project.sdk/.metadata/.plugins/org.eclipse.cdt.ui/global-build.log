@@ -1216,3 +1216,764 @@ make: Nothing to be done for 'all'.
 17:39:52 **** Incremental Build of configuration Debug for project ALU_Firmware ****
 make all 
 make: Nothing to be done for 'all'.
+17:50:40 **** Auto Build of project ALU_Firmware_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_4/src"
+make -C microblaze_0/libsrc/gpio_v4_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_4/src"
+make -C microblaze_0/libsrc/gpio_v4_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+17:50:46 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8896	    652	   3132	  12680	   3188	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+17:55:14 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+18:00:29 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8756	    652	   3136	  12544	   3100	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+18:00:47 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8756	    652	   3136	  12544	   3100	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+18:01:27 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+18:17:06 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8896	    652	   3132	  12680	   3188	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+18:17:15 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8896	    652	   3132	  12680	   3188	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+18:18:11 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+18:22:24 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:42:3: error: 'operation' undeclared (first use in this function); did you mean 'operator'?
+   operation = Parse(DataRead,10,11);
+   ^~~~~~~~~
+   operator
+../src/Main.c:42:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+18:22:40 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:24:20: warning: variable 'operation' set but not used [-Wunused-but-set-variable]
+  Xuint32 numA,numB,operation;
+                    ^~~~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8924	    652	   3136	  12712	   31a8	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+18:23:39 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'main':
+../src/Main.c:50:4: error: expected '}' before 'else'
+    else if(operation==1)//A-B
+    ^~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+18:23:45 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8828	    652	   3136	  12616	   3148	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+18:23:50 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8828	    652	   3136	  12616	   3148	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+18:23:55 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8828	    652	   3136	  12616	   3148	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+18:25:09 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+18:28:42 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8732	    652	   3136	  12520	   30e8	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+18:28:47 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8732	    652	   3136	  12520	   30e8	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+18:29:18 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+18:32:23 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8732	    652	   3136	  12520	   30e8	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+18:33:09 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+18:35:53 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8732	    652	   3136	  12520	   30e8	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+18:36:30 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+18:59:45 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8732	    652	   3136	  12520	   30e8	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+19:00:24 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+19:10:28 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8732	    652	   3136	  12520	   30e8	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+19:10:38 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8732	    652	   3136	  12520	   30e8	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+19:17:27 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'Parse':
+../src/Main.c:79:17: warning: statement with no effect [-Wunused-value]
+    (iStart-iEnd)>>iStart;
+    ~~~~~~~~~~~~~^~~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8692	    652	   3136	  12480	   30c0	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+19:17:55 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'Parse':
+../src/Main.c:79:17: warning: statement with no effect [-Wunused-value]
+    (iStart-iEnd)>>iStart;
+    ~~~~~~~~~~~~~^~~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8692	    652	   3136	  12480	   30c0	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+19:18:12 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'Parse':
+../src/Main.c:74:17: warning: implicit declaration of function 'getBitMask' [-Wimplicit-function-declaration]
+  Xuint32 mask = getBitMask(iEnd,iStart);
+                 ^~~~~~~~~~
+../src/Main.c: At top level:
+../src/Main.c:80:9: error: conflicting types for 'getBitMask'
+ Xuint32 getBitMask(int highbit, int lowbit) {
+         ^~~~~~~~~~
+../src/Main.c:74:17: note: previous implicit declaration of 'getBitMask' was here
+  Xuint32 mask = getBitMask(iEnd,iStart);
+                 ^~~~~~~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+19:18:20 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'Parse':
+../src/Main.c:74:17: warning: implicit declaration of function 'getBitMask' [-Wimplicit-function-declaration]
+  Xuint32 mask = getBitMask(iEnd,iStart);
+                 ^~~~~~~~~~
+../src/Main.c: At top level:
+../src/Main.c:79:9: error: conflicting types for 'getBitMask'
+ Xuint32 getBitMask(int highbit, int lowbit) {
+         ^~~~~~~~~~
+../src/Main.c:74:17: note: previous implicit declaration of 'getBitMask' was here
+  Xuint32 mask = getBitMask(iEnd,iStart);
+                 ^~~~~~~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+19:19:02 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'Parse':
+../src/Main.c:74:17: warning: implicit declaration of function 'getBitMask' [-Wimplicit-function-declaration]
+  Xuint32 mask = getBitMask(iEnd,iStart);
+                 ^~~~~~~~~~
+../src/Main.c: At top level:
+../src/Main.c:79:10: error: conflicting types for 'getBitMask'
+ unsigned getBitMask(int highbit, int lowbit) {
+          ^~~~~~~~~~
+../src/Main.c:74:17: note: previous implicit declaration of 'getBitMask' was here
+  Xuint32 mask = getBitMask(iEnd,iStart);
+                 ^~~~~~~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+19:20:00 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/Main.c: In function 'Parse':
+../src/Main.c:74:17: warning: implicit declaration of function 'getBitMask' [-Wimplicit-function-declaration]
+  Xuint32 mask = getBitMask(iEnd,iStart);
+                 ^~~~~~~~~~
+../src/Main.c: At top level:
+../src/Main.c:79:9: error: conflicting types for 'getBitMask'
+ Xuint32 getBitMask(int highbit, int lowbit) {
+         ^~~~~~~~~~
+../src/Main.c:74:17: note: previous implicit declaration of 'getBitMask' was here
+  Xuint32 mask = getBitMask(iEnd,iStart);
+                 ^~~~~~~~~~
+make: *** [src/subdir.mk:23: src/Main.o] Error 1
+19:21:02 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8796	    652	   3136	  12584	   3128	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+19:21:41 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+19:26:18 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8828	    652	   3136	  12616	   3148	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+19:28:41 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:26 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8840	    652	   3132	  12624	   3150	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+19:34:57 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+19:36:28 **** Auto Build of configuration Debug for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8844	    652	   3136	  12632	   3158	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+19:37:06 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.

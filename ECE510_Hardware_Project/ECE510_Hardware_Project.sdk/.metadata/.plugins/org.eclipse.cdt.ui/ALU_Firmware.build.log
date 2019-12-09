@@ -1,6 +1,6 @@
-17:39:52 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+19:37:06 **** Incremental Build of configuration Debug for project ALU_Firmware ****
 make all 
 make: Nothing to be done for 'all'.
 
-17:39:52 Build Finished (took 172ms)
+19:37:06 Build Finished (took 147ms)
 

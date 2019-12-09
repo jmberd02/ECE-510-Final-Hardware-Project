@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# updatemem v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Sun Dec  8 19:27:50 2019
+# Process ID: 26184
+# Current directory: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project
+# Command line: updatemem.exe -mode batch -source D:/Xilinx/SDK/2019.1/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/CNTxALU.mmi -data D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc ALU/ALU_i/microblaze_0 -bit C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/CNTxALU.bit -out C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit -force
+# Log file: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/updatemem.log
+# Journal file: C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project\updatemem.jou
+#-----------------------------------------------------------
+source D:/Xilinx/SDK/2019.1/scripts/updatemem/main.tcl -notrace
+ Loading bitfile C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/CNTxALU.bit
+Loading data files...
+Updating memory content...
+Creating bitstream...
+Writing bitstream C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit...
+  update_mem: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 527.230 ; gain = 438.449
+INFO: [Common 17-206] Exiting updatemem at Sun Dec  8 19:27:59 2019...

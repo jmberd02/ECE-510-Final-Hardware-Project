@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/constrs_1/imports/SSD_Test.xdc rfile:../../../ECE510_Hardware_Project.srcs/constrs_1/imports/SSD_Test.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.srcs/constrs_1/imports/SSD_Test.xdc rfile:../../../ECE510_Hardware_Project.srcs/constrs_1/imports/SSD_Test.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk_100MHz]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]

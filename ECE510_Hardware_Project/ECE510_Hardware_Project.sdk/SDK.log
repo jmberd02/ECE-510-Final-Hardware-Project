@@ -85,3 +85,415 @@ con
 ----------------End of Script----------------
 
 17:39:56 INFO  : Disconnected from the channel tcfchan#2.
+17:50:32 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.sdk\temp_xsdb_launch_script.tcl
+17:50:32 INFO  : Registering command handlers for SDK TCF services
+17:50:35 INFO  : XSCT server has started successfully.
+17:50:38 INFO  : Successfully done setting XSCT server connection channel  
+17:50:38 INFO  : Processing command line option -hwspec C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU.hdf.
+17:50:38 INFO  : Successfully done setting SDK workspace  
+17:51:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:51:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+17:51:47 INFO  : FPGA configured successfully with bitstream "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit"
+17:53:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:53:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+17:53:06 INFO  : FPGA configured successfully with bitstream "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit"
+17:55:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+17:55:15 INFO  : 'fpga -state' command is executed.
+17:55:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:55:15 INFO  : Jtag cable 'Digilent Basys3 210183AB4D5CA' is selected.
+17:55:15 INFO  : 'jtag frequency' command is executed.
+17:55:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:55:15 INFO  : Context for processor 'microblaze_0' is selected.
+17:55:15 INFO  : Processor reset is completed for 'microblaze_0'.
+17:55:15 INFO  : Context for processor 'microblaze_0' is selected.
+17:55:15 INFO  : The application 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf' is downloaded to processor 'microblaze_0'.
+17:55:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+dow C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf
+----------------End of Script----------------
+
+17:55:15 INFO  : Memory regions updated for context PA
+17:55:15 INFO  : Memory regions updated for context PA
+17:55:15 INFO  : Context for processor 'microblaze_0' is selected.
+17:55:15 INFO  : 'con' command is executed.
+17:55:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+con
+----------------End of Script----------------
+
+17:55:15 INFO  : Launch script is exported to file 'C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu_firmware.elf_on_local.tcl'
+18:01:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:01:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+18:01:20 INFO  : FPGA configured successfully with bitstream "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit"
+18:01:29 INFO  : Disconnected from the channel tcfchan#1.
+18:01:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+18:01:31 INFO  : 'fpga -state' command is executed.
+18:01:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:01:31 INFO  : Jtag cable 'Digilent Basys3 210183AB4D5CA' is selected.
+18:01:31 INFO  : 'jtag frequency' command is executed.
+18:01:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:01:31 INFO  : Context for processor 'microblaze_0' is selected.
+18:01:31 INFO  : Processor reset is completed for 'microblaze_0'.
+18:01:31 INFO  : Context for processor 'microblaze_0' is selected.
+18:01:31 INFO  : The application 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf' is downloaded to processor 'microblaze_0'.
+18:01:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+dow C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf
+----------------End of Script----------------
+
+18:01:31 INFO  : Memory regions updated for context PA
+18:01:31 INFO  : Memory regions updated for context PA
+18:01:31 INFO  : Context for processor 'microblaze_0' is selected.
+18:01:31 INFO  : 'con' command is executed.
+18:01:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+con
+----------------End of Script----------------
+
+18:01:31 INFO  : Launch script is exported to file 'C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu_firmware.elf_on_local.tcl'
+18:17:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:18:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:18:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+18:18:03 INFO  : FPGA configured successfully with bitstream "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit"
+18:18:14 INFO  : Disconnected from the channel tcfchan#2.
+18:18:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+18:18:15 INFO  : 'fpga -state' command is executed.
+18:18:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:18:15 INFO  : Jtag cable 'Digilent Basys3 210183AB4D5CA' is selected.
+18:18:15 INFO  : 'jtag frequency' command is executed.
+18:18:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:18:15 INFO  : Context for processor 'microblaze_0' is selected.
+18:18:15 INFO  : Processor reset is completed for 'microblaze_0'.
+18:18:15 INFO  : Context for processor 'microblaze_0' is selected.
+18:18:15 INFO  : The application 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf' is downloaded to processor 'microblaze_0'.
+18:18:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+dow C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf
+----------------End of Script----------------
+
+18:18:15 INFO  : Memory regions updated for context PA
+18:18:15 INFO  : Memory regions updated for context PA
+18:18:15 INFO  : Context for processor 'microblaze_0' is selected.
+18:18:15 INFO  : 'con' command is executed.
+18:18:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+con
+----------------End of Script----------------
+
+18:18:15 INFO  : Launch script is exported to file 'C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu_firmware.elf_on_local.tcl'
+18:24:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:24:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+18:24:53 INFO  : FPGA configured successfully with bitstream "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit"
+18:25:11 INFO  : Disconnected from the channel tcfchan#3.
+18:25:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+18:25:12 INFO  : 'fpga -state' command is executed.
+18:25:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:25:12 INFO  : Jtag cable 'Digilent Basys3 210183AB4D5CA' is selected.
+18:25:12 INFO  : 'jtag frequency' command is executed.
+18:25:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:25:12 INFO  : Context for processor 'microblaze_0' is selected.
+18:25:12 INFO  : Processor reset is completed for 'microblaze_0'.
+18:25:12 INFO  : Context for processor 'microblaze_0' is selected.
+18:25:12 INFO  : The application 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf' is downloaded to processor 'microblaze_0'.
+18:25:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+dow C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf
+----------------End of Script----------------
+
+18:25:12 INFO  : Memory regions updated for context PA
+18:25:12 INFO  : Memory regions updated for context PA
+18:25:12 INFO  : Context for processor 'microblaze_0' is selected.
+18:25:12 INFO  : 'con' command is executed.
+18:25:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+con
+----------------End of Script----------------
+
+18:25:12 INFO  : Launch script is exported to file 'C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu_firmware.elf_on_local.tcl'
+18:29:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:29:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+18:29:13 INFO  : FPGA configured successfully with bitstream "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit"
+18:29:20 INFO  : Disconnected from the channel tcfchan#4.
+18:29:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+18:29:21 INFO  : 'fpga -state' command is executed.
+18:29:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:29:21 INFO  : Jtag cable 'Digilent Basys3 210183AB4D5CA' is selected.
+18:29:21 INFO  : 'jtag frequency' command is executed.
+18:29:21 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:29:21 INFO  : Context for processor 'microblaze_0' is selected.
+18:29:21 INFO  : Processor reset is completed for 'microblaze_0'.
+18:29:21 INFO  : Context for processor 'microblaze_0' is selected.
+18:29:21 INFO  : The application 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf' is downloaded to processor 'microblaze_0'.
+18:29:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+dow C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf
+----------------End of Script----------------
+
+18:29:21 INFO  : Memory regions updated for context PA
+18:29:21 INFO  : Memory regions updated for context PA
+18:29:21 INFO  : Context for processor 'microblaze_0' is selected.
+18:29:21 INFO  : 'con' command is executed.
+18:29:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+con
+----------------End of Script----------------
+
+18:29:21 INFO  : Launch script is exported to file 'C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu_firmware.elf_on_local.tcl'
+18:32:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:32:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+18:32:45 INFO  : FPGA configured successfully with bitstream "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit"
+18:33:12 INFO  : Disconnected from the channel tcfchan#5.
+18:33:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+18:33:13 INFO  : 'fpga -state' command is executed.
+18:33:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:33:13 INFO  : Jtag cable 'Digilent Basys3 210183AB4D5CA' is selected.
+18:33:13 INFO  : 'jtag frequency' command is executed.
+18:33:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:33:13 INFO  : Context for processor 'microblaze_0' is selected.
+18:33:14 INFO  : Processor reset is completed for 'microblaze_0'.
+18:33:14 INFO  : Context for processor 'microblaze_0' is selected.
+18:33:14 INFO  : The application 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf' is downloaded to processor 'microblaze_0'.
+18:33:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+dow C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf
+----------------End of Script----------------
+
+18:33:14 INFO  : Memory regions updated for context PA
+18:33:14 INFO  : Memory regions updated for context PA
+18:33:14 INFO  : Context for processor 'microblaze_0' is selected.
+18:33:14 INFO  : 'con' command is executed.
+18:33:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+con
+----------------End of Script----------------
+
+18:33:14 INFO  : Launch script is exported to file 'C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu_firmware.elf_on_local.tcl'
+18:36:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:36:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+18:36:10 INFO  : FPGA configured successfully with bitstream "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit"
+18:36:32 INFO  : Disconnected from the channel tcfchan#6.
+18:36:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+18:36:33 INFO  : 'fpga -state' command is executed.
+18:36:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:36:33 INFO  : Jtag cable 'Digilent Basys3 210183AB4D5CA' is selected.
+18:36:33 INFO  : 'jtag frequency' command is executed.
+18:36:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:36:33 INFO  : Context for processor 'microblaze_0' is selected.
+18:36:33 INFO  : Processor reset is completed for 'microblaze_0'.
+18:36:33 INFO  : Context for processor 'microblaze_0' is selected.
+18:36:33 INFO  : The application 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf' is downloaded to processor 'microblaze_0'.
+18:36:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+dow C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf
+----------------End of Script----------------
+
+18:36:33 INFO  : Memory regions updated for context PA
+18:36:33 INFO  : Memory regions updated for context PA
+18:36:33 INFO  : Context for processor 'microblaze_0' is selected.
+18:36:33 INFO  : 'con' command is executed.
+18:36:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+con
+----------------End of Script----------------
+
+18:36:33 INFO  : Launch script is exported to file 'C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu_firmware.elf_on_local.tcl'
+19:00:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:00:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+19:00:02 INFO  : FPGA configured successfully with bitstream "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit"
+19:00:26 INFO  : Disconnected from the channel tcfchan#7.
+19:00:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+19:00:27 INFO  : 'fpga -state' command is executed.
+19:00:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:00:27 INFO  : Jtag cable 'Digilent Basys3 210183AB4D5CA' is selected.
+19:00:27 INFO  : 'jtag frequency' command is executed.
+19:00:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:00:27 INFO  : Context for processor 'microblaze_0' is selected.
+19:00:27 INFO  : Processor reset is completed for 'microblaze_0'.
+19:00:27 INFO  : Context for processor 'microblaze_0' is selected.
+19:00:27 INFO  : The application 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf' is downloaded to processor 'microblaze_0'.
+19:00:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+dow C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf
+----------------End of Script----------------
+
+19:00:27 INFO  : Memory regions updated for context PA
+19:00:27 INFO  : Memory regions updated for context PA
+19:00:27 INFO  : Context for processor 'microblaze_0' is selected.
+19:00:27 INFO  : 'con' command is executed.
+19:00:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+con
+----------------End of Script----------------
+
+19:00:27 INFO  : Launch script is exported to file 'C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu_firmware.elf_on_local.tcl'
+19:18:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:18:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+19:18:37 INFO  : FPGA configured successfully with bitstream "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit"
+19:21:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:21:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+19:21:32 INFO  : FPGA configured successfully with bitstream "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit"
+19:21:44 INFO  : Disconnected from the channel tcfchan#8.
+19:21:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+19:21:45 INFO  : 'fpga -state' command is executed.
+19:21:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:21:45 INFO  : Jtag cable 'Digilent Basys3 210183AB4D5CA' is selected.
+19:21:45 INFO  : 'jtag frequency' command is executed.
+19:21:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:21:45 INFO  : Context for processor 'microblaze_0' is selected.
+19:21:45 INFO  : Processor reset is completed for 'microblaze_0'.
+19:21:45 INFO  : Context for processor 'microblaze_0' is selected.
+19:21:45 INFO  : The application 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf' is downloaded to processor 'microblaze_0'.
+19:21:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+dow C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf
+----------------End of Script----------------
+
+19:21:45 INFO  : Memory regions updated for context PA
+19:21:45 INFO  : Memory regions updated for context PA
+19:21:45 INFO  : Context for processor 'microblaze_0' is selected.
+19:21:45 INFO  : 'con' command is executed.
+19:21:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+con
+----------------End of Script----------------
+
+19:21:45 INFO  : Launch script is exported to file 'C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu_firmware.elf_on_local.tcl'
+19:26:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:26:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+19:26:41 INFO  : FPGA configured successfully with bitstream "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit"
+19:27:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:27:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+19:28:00 INFO  : FPGA configured successfully with bitstream "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit"
+19:28:43 INFO  : Disconnected from the channel tcfchan#9.
+19:28:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+19:28:44 INFO  : 'fpga -state' command is executed.
+19:28:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:28:44 INFO  : Jtag cable 'Digilent Basys3 210183AB4D5CA' is selected.
+19:28:44 INFO  : 'jtag frequency' command is executed.
+19:28:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:28:44 INFO  : Context for processor 'microblaze_0' is selected.
+19:28:44 INFO  : Processor reset is completed for 'microblaze_0'.
+19:28:44 INFO  : Context for processor 'microblaze_0' is selected.
+19:28:44 INFO  : The application 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf' is downloaded to processor 'microblaze_0'.
+19:28:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+dow C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf
+----------------End of Script----------------
+
+19:28:44 INFO  : Memory regions updated for context PA
+19:28:44 INFO  : Memory regions updated for context PA
+19:28:44 INFO  : Context for processor 'microblaze_0' is selected.
+19:28:44 INFO  : 'con' command is executed.
+19:28:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+con
+----------------End of Script----------------
+
+19:28:44 INFO  : Launch script is exported to file 'C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu_firmware.elf_on_local.tcl'
+19:34:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:34:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+19:34:43 INFO  : FPGA configured successfully with bitstream "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit"
+19:35:01 INFO  : Disconnected from the channel tcfchan#10.
+19:35:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+19:35:02 INFO  : 'fpga -state' command is executed.
+19:35:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:35:02 INFO  : Jtag cable 'Digilent Basys3 210183AB4D5CA' is selected.
+19:35:02 INFO  : 'jtag frequency' command is executed.
+19:35:02 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:35:02 INFO  : Context for processor 'microblaze_0' is selected.
+19:35:02 INFO  : Processor reset is completed for 'microblaze_0'.
+19:35:02 INFO  : Context for processor 'microblaze_0' is selected.
+19:35:02 INFO  : The application 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf' is downloaded to processor 'microblaze_0'.
+19:35:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+dow C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf
+----------------End of Script----------------
+
+19:35:02 INFO  : Memory regions updated for context PA
+19:35:02 INFO  : Memory regions updated for context PA
+19:35:02 INFO  : Context for processor 'microblaze_0' is selected.
+19:35:02 INFO  : 'con' command is executed.
+19:35:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+con
+----------------End of Script----------------
+
+19:35:02 INFO  : Launch script is exported to file 'C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu_firmware.elf_on_local.tcl'
+19:36:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:36:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+19:36:45 INFO  : FPGA configured successfully with bitstream "C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit"
+19:37:08 INFO  : Disconnected from the channel tcfchan#11.
+19:37:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA" && level==0} -index 0' command is executed.
+19:37:09 INFO  : 'fpga -state' command is executed.
+19:37:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:37:09 INFO  : Jtag cable 'Digilent Basys3 210183AB4D5CA' is selected.
+19:37:09 INFO  : 'jtag frequency' command is executed.
+19:37:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:37:09 INFO  : Context for processor 'microblaze_0' is selected.
+19:37:09 INFO  : Processor reset is completed for 'microblaze_0'.
+19:37:09 INFO  : Context for processor 'microblaze_0' is selected.
+19:37:09 INFO  : The application 'C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf' is downloaded to processor 'microblaze_0'.
+19:37:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+dow C:/Users/Jacob/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf
+----------------End of Script----------------
+
+19:37:09 INFO  : Memory regions updated for context PA
+19:37:09 INFO  : Memory regions updated for context PA
+19:37:09 INFO  : Context for processor 'microblaze_0' is selected.
+19:37:09 INFO  : 'con' command is executed.
+19:37:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D5CA"} -index 0
+con
+----------------End of Script----------------
+
+19:37:09 INFO  : Launch script is exported to file 'C:\Users\Jacob\source\repos\ECE-510-Final-Hardware-Project\ECE510_Hardware_Project\ECE510_Hardware_Project.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_alu_firmware.elf_on_local.tcl'
+19:38:08 INFO  : Disconnected from the channel tcfchan#12.
