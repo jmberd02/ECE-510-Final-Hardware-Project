@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 12:57:23 **** Auto Build of configuration Debug for project ALU_Firmware ****
 make all 
 'Building file: ../src/Main.c'
@@ -25,4 +26,11 @@ mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
 ' '
 
 12:57:24 Build Finished (took 938ms)
+=======
+22:09:38 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+
+22:09:38 Build Finished (took 198ms)
+>>>>>>> Stashed changes
 

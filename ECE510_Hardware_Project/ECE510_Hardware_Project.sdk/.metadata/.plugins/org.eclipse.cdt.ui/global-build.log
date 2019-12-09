@@ -310,6 +310,7 @@ mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
    9316	    652	   3136	  13104	   3330	ALU_Firmware.elf
 'Finished building: ALU_Firmware.elf.size'
 ' '
+<<<<<<< Updated upstream
 10:37:24 **** Auto Build of project ALU_Firmware_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_3/src"
@@ -450,6 +451,13 @@ make all
 'Building file: ../src/Main.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+=======
+21:49:48 **** Incremental Build of configuration Release for project ALU_Firmware ****
+make all 
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+>>>>>>> Stashed changes
 In file included from ../src/Main.c:8:
 ../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
  #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
@@ -467,6 +475,7 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -m
 'Invoking: MicroBlaze Print Size'
 mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
    text	   data	    bss	    dec	    hex	filename
+<<<<<<< Updated upstream
    9316	    652	   3136	  13104	   3330	ALU_Firmware.elf
 'Finished building: ALU_Firmware.elf.size'
 ' '
@@ -771,3 +780,11 @@ mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
    9304	    652	   3132	  13088	   3320	ALU_Firmware.elf
 'Finished building: ALU_Firmware.elf.size'
 ' '
+=======
+   9036	    652	   3136	  12824	   3218	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
+22:09:38 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+make all 
+make: Nothing to be done for 'all'.
+>>>>>>> Stashed changes

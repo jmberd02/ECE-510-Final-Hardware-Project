@@ -2943,13 +2943,18 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-18
 
 !ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 21:19:22.339
 !MESSAGE Executed Webtalk command
+<<<<<<< Updated upstream
 !SESSION 2019-12-09 10:36:19.700 -----------------------------------------------
+=======
+!SESSION 2019-12-08 21:40:05.053 -----------------------------------------------
+>>>>>>> Stashed changes
 eclipse.buildId=2019.1
 java.version=1.8.0_112
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk
 
+<<<<<<< Updated upstream
 !ENTRY org.eclipse.ui 2 0 2019-12-09 10:36:52.275
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
 !SUBENTRY 1 org.eclipse.ui 2 0 2019-12-09 10:36:52.275
@@ -3389,6 +3394,53 @@ java.lang.NullPointerException
 !MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf], Thread: main
 
 !ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 10:37:37.545
+=======
+!ENTRY org.eclipse.ui 2 0 2019-12-08 21:40:07.257
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-08 21:40:07.257
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-12-08 21:40:08.016
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-08 21:40:08.016
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:40:15.448
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:40:15.456
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:40:15.736
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:40:15.743
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:40:15.752
+!MESSAGE XSCT Command: [setws C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:40:15.770
+!MESSAGE XSCT command with result: [setws C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:40:15.778
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:40:18.454
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:22.094
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:22.103
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf ], Result: [null, {"microblaze_0": "ALU/ALU_i/microblaze_0:ALU/ALU_i/microblaze_0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:22.110
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:22.122
+>>>>>>> Stashed changes
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf], Result: [null, {"axi_gpio_0": {"hier_name": "axi_gpio_0",
 "type": "axi_gpio",
 "version": "2.0",
@@ -3451,6 +3503,7 @@ java.lang.NullPointerException
 },
 }]. Thread: main
 
+<<<<<<< Updated upstream
 !ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 10:37:37.931
 !MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/natha/AppData/Local/Temp/system5147401576220511634.hdf], Thread: main
 
@@ -3964,6 +4017,12 @@ java.lang.NullPointerException
 !MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf], Thread: main
 
 !ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 11:01:24.446
+=======
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:22.149
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:22.162
+>>>>>>> Stashed changes
 !MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf], Result: [null, {"device": "7a35t",
 "family": "artix7",
 "timestamp": "Sun Dec  8 15:21:06 2019",
@@ -3971,6 +4030,7 @@ java.lang.NullPointerException
 "part": "xc7a35tcpg236-1",
 }]. Thread: main
 
+<<<<<<< Updated upstream
 !ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 11:01:29.986
 !MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf ], Thread: ModalContext
 
@@ -4035,6 +4095,78 @@ java.lang.NullPointerException
 !MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0], Thread: Worker-14
 
 !ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 11:02:28.380
+=======
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:23.692
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:23.703
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:23.736
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:23.744
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:23.755
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0 C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:23.764
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0 C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:39.331
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:41.533
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:41.540
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:43.649
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183AB4D16A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:43.656
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:43.672
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183AB4D16A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:43.679
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:43.711
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:43.718
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:45.157
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:45.164
+!MESSAGE XSCT Command: [fpga -file C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:46.442
+!MESSAGE XSCT command with result: [fpga -file C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:47.249
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 21:46:47.257
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.716
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.726
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf], Result: [null, {}]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.732
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.761
+>>>>>>> Stashed changes
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0], Result: [null, {"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
 "address_offset": "0x0",
 "access": "read-write",
@@ -4601,12 +4733,21 @@ Writing a 1 to this bit position clears the receive FIFO
 },
 "microblaze_0_local_memory_dlmb_bram_if_cntlr": {},
 "microblaze_0_local_memory_ilmb_bram_if_cntlr": {},
+<<<<<<< Updated upstream
 }]. Thread: Worker-14
 
 !ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 11:02:28.392
 !MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0], Thread: Worker-14
 
 !ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 11:02:28.411
+=======
+}]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.770
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.783
+>>>>>>> Stashed changes
 !MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0], Result: [null, {"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
 "base": "0x40000000",
 "high": "0x4000FFFF",
@@ -4651,6 +4792,7 @@ Writing a 1 to this bit position clears the receive FIFO
 "acctype": "",
 "tz": "",
 },
+<<<<<<< Updated upstream
 }]. Thread: Worker-14
 
 !ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 11:02:28.425
@@ -7140,3 +7282,276 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-29
 
 !ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 11:59:56.767
 !MESSAGE XSCT command with result: [disconnect tcfchan#14], Result: [null, ]. Thread: Thread-524
+=======
+}]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.790
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.800
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf], Result: [null, {"microblaze_0": {"bscan": "2",
+"index": "0",
+},
+}]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.808
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf mdm_1], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.817
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf mdm_1], Result: [null, {}]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.822
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf mdm_1], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.830
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf mdm_1], Result: [null, {"microblaze_0": {},
+}]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.836
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf mdm_1], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.843
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf mdm_1], Result: [null, microblaze_0]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.849
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0 C_DEBUG_ENABLED], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.856
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0 C_DEBUG_ENABLED], Result: [null, 1]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.863
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.875
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0 C_DEBUG_EVENT_COUNTERS], Result: [null, 5]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.881
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.889
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0 C_DEBUG_COUNTER_WIDTH], Result: [null, 32]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.900
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0 C_FREQ], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.908
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0 C_FREQ], Result: [null, 100000000]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.921
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.928
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.934
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.947
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183AB4D16A]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.953
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.966
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183AB4D16A]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.971
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==1}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:38.999
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.005
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==0} -index 0], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.038
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==0} -index 0], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.044
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.054
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.061
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.067
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.074
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.086
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183AB4D16A]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.092
+!MESSAGE XSCT Command: [version -server], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.098
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.104
+!MESSAGE XSCT Command: [version], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.111
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.124
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.144
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183AB4D16A]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.151
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==1}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.185
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.193
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.212
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183AB4D16A]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.220
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==1}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.249
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.255
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.269
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183AB4D16A]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.276
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==1}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.310
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.318
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.336
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183AB4D16A]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.343
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==1}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.380
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183AB4D16A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.389
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Basys3 210183AB4D16A" && level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.429
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Basys3 210183AB4D16A" && level == 0}], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.437
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.445
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.453
+!MESSAGE XSCT Command: [::hsi::utils::get_clock_info -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.464
+!MESSAGE XSCT command with result: [::hsi::utils::get_clock_info -json C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf microblaze_0], Result: [null, {"Clk": "100000000",
+"Dbg_Clk": "",
+}]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.473
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.482
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.491
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D16A"} -index 0], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.546
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D16A"} -index 0], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.552
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.622
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.628
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D16A"} -index 0], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.673
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D16A"} -index 0], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.680
+!MESSAGE XSCT Command: [dow C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.753
+!MESSAGE XSCT command with result: [dow C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/ALU_Firmware/Debug/ALU_Firmware.elf], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.781
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D16A"} -index 0], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.829
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183AB4D16A"} -index 0], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.835
+!MESSAGE XSCT Command: [con], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.850
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.865
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-75
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:39.874
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-75
+!SESSION 2019-12-09 09:51:45.717 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk
+
+!ENTRY org.eclipse.ui 2 0 2019-12-09 09:51:58.715
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-09 09:51:58.715
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-12-09 09:51:59.455
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-09 09:51:59.455
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 09:52:10.764
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 09:52:10.771
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 09:52:13.671
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 09:52:13.676
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 09:52:13.688
+!MESSAGE XSCT Command: [setws C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 09:52:13.711
+!MESSAGE XSCT command with result: [setws C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 09:52:13.718
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-09 09:52:17.646
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/natha/source/repos/ECE-510-Final-Hardware-Project/ECE510_Hardware_Project/ECE510_Hardware_Project.sdk/CNTxALU_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-4
+>>>>>>> Stashed changes
