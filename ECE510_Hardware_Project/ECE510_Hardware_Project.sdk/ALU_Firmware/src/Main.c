@@ -68,7 +68,7 @@ int main(void)
 			if ((int)numOut < 0)
 			{
 				xil_printf("WARNING: Result is negative\tDisplaying Two's Complement\r\n");
-				numOut = ~numOut+1;
+				numOut = numOut;
 			}
 			else if ((int)numOut > 65535)
 			{
