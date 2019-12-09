@@ -64,6 +64,18 @@ int main(void)
 			}
 
 			xil_printf("Num A %c Num B => %d %c %d = %d\r\n",operator,numA,operator,numB,numOut);
+
+			if ((int)numOut < 0)
+			{
+				xil_printf("WARNING: Result is negative\tDisplaying Two's Complement\r\n");
+				numOut = ~numOut+1;
+			}
+			else if ((int)numOut > 65535)
+			{
+				xil_printf("WARNING: Result larger than size supported by LEDs\r\n");
+				numOut = 65535;
+			}
+			XGpio_DiscreteWrite(&GpioDevice,1,numOut);
 			oldData = DataRead;
 		}
 	}

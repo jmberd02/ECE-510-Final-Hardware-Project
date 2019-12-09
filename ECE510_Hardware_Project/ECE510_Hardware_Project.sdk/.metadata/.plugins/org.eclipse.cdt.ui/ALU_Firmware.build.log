@@ -1,4 +1,4 @@
-19:40:43 **** Auto Build of configuration Debug for project ALU_Firmware ****
+21:17:22 **** Incremental Build of configuration Debug for project ALU_Firmware ****
 make all 
 'Building file: ../src/Main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -20,9 +20,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -m
 'Invoking: MicroBlaze Print Size'
 mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   8844	    652	   3136	  12632	   3158	ALU_Firmware.elf
+   9316	    652	   3136	  13104	   3330	ALU_Firmware.elf
 'Finished building: ALU_Firmware.elf.size'
 ' '
 
-19:40:44 Build Finished (took 507ms)
+21:17:23 Build Finished (took 716ms)
 
