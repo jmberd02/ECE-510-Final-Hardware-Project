@@ -1,6 +1,28 @@
-19:37:06 **** Incremental Build of configuration Debug for project ALU_Firmware ****
+19:40:43 **** Auto Build of configuration Debug for project ALU_Firmware ****
 make all 
-make: Nothing to be done for 'all'.
+'Building file: ../src/Main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -I../../ALU_Firmware_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+In file included from ../src/Main.c:8:
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ALU_Firmware_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/Main.c'
+' '
+'Building target: ALU_Firmware.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ALU_Firmware_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ALU_Firmware.elf"  ./src/Main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ALU_Firmware.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ALU_Firmware.elf  |tee "ALU_Firmware.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8844	    652	   3136	  12632	   3158	ALU_Firmware.elf
+'Finished building: ALU_Firmware.elf.size'
+' '
 
-19:37:06 Build Finished (took 147ms)
+19:40:44 Build Finished (took 507ms)
 

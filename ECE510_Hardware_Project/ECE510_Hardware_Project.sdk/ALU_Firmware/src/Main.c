@@ -78,13 +78,8 @@ Xuint32 Parse(Xuint32 port, int iStart, int iEnd)
 	return total;
 }
 
-//Xuint32 getBitMask(int highbit, int lowbit) {
-//	//https://stackoverflow.com/a/35109809
-//	Xuint32 i = ~0U;
-//    return ~(i << highbit << 1) & (i << lowbit);
-//}
-
 unsigned bitSpec(int start, int len) {
+	//https://stackoverflow.com/a/35109809
     return (~0U >> (32 - len)) << start;
 }
 
